@@ -23,12 +23,12 @@ const SmartviewsErrorPage = ({
   setError
 }: ISmartviewsErrorPage): JSX.Element => {
   const handleClearFilters = (): void => {
-    // setError(undefined);
+    setError(undefined);
     resetFilters(tabId);
   };
 
   const handleRefreshAction = (): Promise<void> | void => {
-    // setError(undefined);
+    setError(undefined);
     handleRefresh();
   };
 

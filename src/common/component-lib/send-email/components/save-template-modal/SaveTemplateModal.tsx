@@ -42,7 +42,7 @@ const SaveTemplateModal = (props: ISaveTemplateModal): JSX.Element => {
             value={templateName}
             setValue={(val) => {
               if (error) {
-                // setError(undefined);
+                setError(undefined);
               }
               setTemplateName(val);
             }}

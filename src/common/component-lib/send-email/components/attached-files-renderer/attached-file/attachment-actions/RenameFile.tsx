@@ -37,7 +37,7 @@ const RenameFile = (props: IRenameFile): JSX.Element => {
   };
 
   useEffect(() => {
-    // setError(undefined);
+    setError(undefined);
   }, [newName]);
 
   return (

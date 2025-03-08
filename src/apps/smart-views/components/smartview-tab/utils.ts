@@ -340,7 +340,7 @@ const handleError = ({
   apiFailure?: boolean;
   apiStatus?: number;
 }): void => {
-  // if (setError) setError(getErrorType({ tabId, apiFailure, tabData, recordCount, apiStatus }));
+  if (setError) setError(getErrorType({ tabId, apiFailure, tabData, recordCount, apiStatus }));
 };
 
 const updateFetchCriteria = ({
