@@ -1,0 +1,40 @@
+.icon_container {
+  /* Size and Shape */
+  width: var(--vcard-icon-size);
+  height: var(--vcard-icon-size);
+  border-radius: 50%;
+
+  /* Font */
+  font-size: var(--vcard-icon-font-size);
+  line-height: var(--vcard-icon-font-size);
+  font-weight: var(--vcard-icon-font-weight);
+  text-align: center;
+  font-style: normal;
+
+  /* Color */
+  color: rgb(var(--marvin-base));
+  background-color: rgb(var(--marvin-warning-1));
+  background-image: radial-gradient(
+    circle at 90% 65%,
+    rgba(var(--marvin-primary-text), 0.1) 35%,
+    transparent 40%
+  );
+
+  /* Behavior */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > img {
+    width: var(--vcard-icon-size);
+    height: var(--vcard-icon-size);
+    border-radius: 50%;
+  }
+}
+
+.icon_shimmer {
+  /* Size and Shape */
+  width: var(--vcard-icon-size) !important;
+  height: var(--vcard-icon-size) !important;
+  border-radius: 50% !important;
+}

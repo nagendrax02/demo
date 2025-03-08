@@ -1,0 +1,24 @@
+.lead_title {
+  margin-inline-end: 12px;
+}
+
+.lead_badge {
+  margin-inline-end: 16px;
+}
+
+.lead_quick_action {
+  margin-inline-end: 16px;
+}
+
+.lead_action {
+  margin-inline-start: auto;
+  justify-content: flex-end;
+}
+
+.lead_quick_action_mobile {
+  margin-inline-start: auto;
+}
+
+.lead_primary_section {
+  min-height: 32px !important;
+}

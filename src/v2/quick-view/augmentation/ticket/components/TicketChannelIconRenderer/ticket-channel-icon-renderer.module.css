@@ -1,0 +1,29 @@
+.channel_icon {
+  width: 24px;
+  height: 24px;
+}
+
+.call_icon {
+  width: 24px;
+  height: 24px;
+
+  path {
+    fill: rgb(var(--ng-primary-30));
+    stroke: rgb(var(--ng-primary-30));
+  }
+}
+
+.default_icon {
+  width: 24px;
+  height: 24px;
+
+  path {
+    fill: rgb(var(--ng-neutral-50));
+  }
+}
+
+.email_icon {
+  path {
+    fill: rgb(var(--ng-primary-30));
+  }
+}

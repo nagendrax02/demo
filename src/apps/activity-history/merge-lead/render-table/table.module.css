@@ -1,0 +1,5 @@
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 0.5px solid rgb(var(--marvin-divider-1));
+}

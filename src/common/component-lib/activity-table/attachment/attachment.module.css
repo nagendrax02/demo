@@ -1,0 +1,14 @@
+.attachment_wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.attachment_link {
+  color: rgb(var(--marvin-primary));
+  cursor: pointer;
+}
+
+.attachment_icon {
+  font-size: 20px;
+}

@@ -1,0 +1,105 @@
+/* Module Items */
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: var(--ng-gp-2);
+  gap: var(--ng-gp-4);
+  border-radius: var(--ng-rd-6);
+  background-color: rgba(var(--ng-neutral-20));
+}
+
+/* More Items */
+
+.more_items {
+  outline: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  max-width: 28px;
+  padding: var(--ng-gp-4) var(--ng-gp-12);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--ng-rd-4);
+
+  & svg {
+    min-width: 16px;
+    min-height: 16px;
+    width: 16px;
+    height: 16px;
+    fill: rgba(var(--ng-neutral-80));
+  }
+
+  &:hover {
+    background-color: rgba(var(--ng-neutral-30));
+  }
+}
+
+/* Items */
+
+.item {
+  outline: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  height: 28px;
+  min-width: 60px;
+  max-width: 120px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: var(--ng-gp-4) var(--ng-gp-8);
+  border-radius: var(--ng-rd-4);
+
+  & > div {
+    color: rgba(var(--ng-neutral-70));
+  }
+
+  & svg {
+    min-width: 16px;
+    min-height: 16px;
+    height: 16px;
+    width: 16px;
+    fill: rgba(var(--ng-neutral-70));
+  }
+
+  &.active {
+    background-color: rgba(var(--ng-neutral-0));
+    box-shadow:
+      0 1px 3px 0 rgb(16 24 40 / 10%),
+      0 1px 2px 0 rgb(16 24 40 / 6%);
+
+    & > div {
+      color: rgba(var(--ng-primary-30));
+    }
+
+    & svg {
+      fill: rgba(var(--ng-primary-30));
+    }
+  }
+
+  &:hover {
+    background-color: rgba(var(--ng-neutral-30));
+
+    & > div {
+      color: rgba(var(--ng-neutral-80));
+    }
+
+    & svg {
+      fill: rgba(var(--ng-neutral-80));
+    }
+  }
+
+  & .label {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

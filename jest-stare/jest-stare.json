@@ -1,0 +1,12 @@
+{
+  "resultDir": "jest-stare/",
+  "reportTitle": "SWLite",
+  "reportHeadline": "SwLite",
+  "coverageLink": "./coverage/lcov-report/index.html",
+  "jestStareConfigJson": "jest-stare.json",
+  "jestGlobalConfigJson": "globalStuff.json",
+  "additionalResultsProcessors": [],
+  "log": false,
+  "resultHtml": "index.html",
+  "resultJson": "jest-results.json"
+}

@@ -1,0 +1,29 @@
+.styled_link {
+  display: block;
+  color: rgb(var(--ng-neutral-70));
+  text-decoration: none;
+  word-break: break-all;
+  cursor: pointer;
+  max-width: 100%;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover {
+    color: rgb(var(--ng-neutral-80));
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: rgb(var(--ng-ink-blue-50));
+  }
+
+  &:focus-visible {
+    outline: auto;
+  }
+}
+
+.tooltip_wrapper {
+  max-width: 100%;
+}

@@ -1,0 +1,9 @@
+.activity_table_wrapper {
+  @media screen and (width <= 768px) {
+    display: grid;
+  }
+}
+
+.download_files {
+  justify-content: flex-start !important;
+}

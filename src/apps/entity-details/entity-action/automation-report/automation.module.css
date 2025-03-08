@@ -1,0 +1,116 @@
+.automation_modal_container {
+  width: 832px !important;
+}
+
+.custom_automation_body {
+  height: 360px !important;
+}
+
+.custom_automation_body tbody {
+  border-left: 1px solid rgb(var(--marvin-divider-1)) !important;
+  border-right: 1px solid rgb(var(--marvin-divider-1)) !important;
+}
+
+.custom_automation_body > div > div {
+  width: 100%;
+}
+
+.custom_icon_style {
+  font-size: 16px !important;
+}
+
+.action_container {
+  cursor: pointer;
+  color: rgb(var(--marvin-primary));
+  font-size: 12px;
+  font-weight: var(--marvin-fw-semibold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+  gap: 8px;
+}
+
+.spinner_container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.error {
+  font-size: 80px;
+  color: rgb(var(--marvin-quaternary-text)) !important;
+  margin-bottom: 16px !important;
+}
+
+.error_container {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.grid_error_container {
+  display: flex !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.header_cells {
+  [class*='last-cell-header'] {
+    justify-content: center !important;
+  }
+}
+
+.header_cells th[data-testid='header-action'] {
+  min-width: unset !important;
+}
+
+.indented_report_container {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.report_name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 2;
+  max-width: 100%;
+}
+
+.report_name_level_0 {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 590;
+  line-height: 20px;
+}
+
+.report_name_level_non_0 {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.report_grid {
+  width: 100%;
+  overflow: auto !important;
+}
+
+.header_cells td {
+  font-size: 12px !important;
+  border: none !important;
+}
+
+.header_cells td > [class*='cell-container'] {
+  border: none !important;
+}
+
+.automation_reports_grid_wrapper {
+  height: 50vh;
+  overflow-y: auto !important;
+}

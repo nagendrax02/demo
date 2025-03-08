@@ -1,0 +1,11 @@
+.container {
+  /* 85px comes from height of top-navigation */
+  height: calc(100vh - 85px);
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--ng-rd-12);
+}
+
+.iframe {
+  width: calc(100vw) !important;
+}

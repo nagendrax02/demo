@@ -1,0 +1,29 @@
+.title {
+  /* Size and Shape */
+  max-width: 25%;
+
+  /* Font */
+  font-size: var(--vcard-title-font-size);
+  font-weight: var(--vcard-title-font-weight);
+  line-height: var(--vcard-title-line-height);
+  font-style: normal;
+  white-space: var(--vcard-title-white-space);
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--vcard-title-line-clamp);
+
+  /* Color */
+  color: rgb(var(--marvin-primary-text));
+
+  /* Behavior */
+  display: inline-block;
+  overflow: hidden;
+}
+
+.title_shimmer {
+  /* Size and Shape */
+  height: 28px !important;
+  width: 30% !important;
+  border-radius: 2px;
+  min-width: 70px;
+}

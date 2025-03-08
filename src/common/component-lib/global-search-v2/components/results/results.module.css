@@ -1,0 +1,26 @@
+.search_results_body {
+  outline: none !important;
+  height: 100%;
+}
+
+.loader {
+  width: 100%;
+}
+
+.recent_search_wrapper {
+  position: relative;
+}
+
+.clear_all_btn {
+  position: absolute;
+  top: 8px;
+  right: var(--ng-gp-8);
+  width: 93px !important;
+  height: 23px !important;
+}
+
+.results_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

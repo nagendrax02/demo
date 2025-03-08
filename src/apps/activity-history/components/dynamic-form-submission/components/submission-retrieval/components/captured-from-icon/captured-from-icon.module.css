@@ -1,0 +1,21 @@
+.captured_from_icon {
+  height: 20px;
+  width: 20px;
+  font-size: 20px !important;
+  margin-inline-start: 0 !important;
+  color: rgb(var(--marvin-tertiary-text)) !important;
+}
+
+.tooltip_content {
+  padding: 8px 12px 12px;
+  font-size: 13px;
+  color: rgb(var(--marvin-tertiary-text)) !important;
+}
+
+.submitted_by {
+  color: rgb(var(--marvin-quaternary-text)) !important;
+}
+
+.tooltip_wrapper {
+  margin-inline-end: auto;
+}

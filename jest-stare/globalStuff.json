@@ -1,0 +1,92 @@
+{
+  "bail": 0,
+  "changedFilesWithAncestor": false,
+  "ci": false,
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "src/**/*.{ts,tsx}",
+    "!src/**/*.d.ts",
+    "!src/**/index.{ts,tsx}",
+    "!src/**/*.types.{ts,tsx}",
+    "!src/assets/**/*.{ts,tsx}",
+    "!src/service-worker/**/*.{ts,tsx}"
+  ],
+  "coverageDirectory": "/Users/nagendrasingh/work/swlite/coverage",
+  "coverageProvider": "babel",
+  "coverageReporters": [
+    "json",
+    "text",
+    "lcov",
+    "clover"
+  ],
+  "detectLeaks": false,
+  "detectOpenHandles": false,
+  "errorOnDeprecated": false,
+  "expand": false,
+  "findRelatedTests": false,
+  "forceExit": false,
+  "json": false,
+  "lastCommit": false,
+  "listTests": false,
+  "logHeapUsage": false,
+  "maxConcurrency": 5,
+  "maxWorkers": 4,
+  "noStackTrace": false,
+  "nonFlagArgs": [],
+  "notify": false,
+  "notifyMode": "failure-change",
+  "onlyChanged": false,
+  "onlyFailures": false,
+  "openHandlesTimeout": 1000,
+  "passWithNoTests": false,
+  "projects": [],
+  "reporters": [
+    [
+      "default",
+      {}
+    ],
+    [
+      "/Users/nagendrasingh/work/swlite/.pnpm/jest-stare@2.5.1_@popperjs+core@2.11.8/node_modules/jest-stare/lib/index.js",
+      {
+        "resultDir": "jest-stare/",
+        "reportTitle": "SWLite",
+        "reportHeadline": "SwLite",
+        "coverageLink": "./coverage/lcov-report/index.html",
+        "jestStareConfigJson": "jest-stare.json",
+        "jestGlobalConfigJson": "globalStuff.json",
+        "additionalResultsProcessors": [],
+        "log": false,
+        "resultHtml": "index.html",
+        "resultJson": "jest-results.json"
+      }
+    ]
+  ],
+  "rootDir": "/Users/nagendrasingh/work/swlite",
+  "runTestsByPath": false,
+  "seed": -2105629967,
+  "silent": true,
+  "skipFilter": false,
+  "snapshotFormat": {
+    "escapeString": false,
+    "printBasicPrototype": false
+  },
+  "testFailureExitCode": 1,
+  "testPathPattern": "",
+  "testSequencer": "/Users/nagendrasingh/work/swlite/.pnpm/@jest+test-sequencer@29.7.0/node_modules/@jest/test-sequencer/build/index.js",
+  "updateSnapshot": "new",
+  "useStderr": false,
+  "watch": false,
+  "watchAll": false,
+  "watchPlugins": [
+    {
+      "config": {},
+      "path": "/Users/nagendrasingh/work/swlite/.pnpm/jest-watch-typeahead@2.2.2_jest@29.7.0/node_modules/jest-watch-typeahead/build/file_name_plugin/plugin.js"
+    },
+    {
+      "config": {},
+      "path": "/Users/nagendrasingh/work/swlite/.pnpm/jest-watch-typeahead@2.2.2_jest@29.7.0/node_modules/jest-watch-typeahead/build/test_name_plugin/plugin.js"
+    }
+  ],
+  "watchman": true,
+  "workerThreads": false
+}

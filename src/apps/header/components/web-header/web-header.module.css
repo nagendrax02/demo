@@ -1,0 +1,30 @@
+.web_header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48px;
+  height: 100vh;
+  background: rgb(var(--marvin-base)) 0% 0% no-repeat padding-box;
+  padding: var(--header-padding);
+  border-inline-end: 1px solid rgb(var(--marvin-divider-1));
+  gap: var(--nav-items-gap);
+  position: relative;
+  z-index: var(--marvin-web-header-z-index);
+
+  & [class*='top-nav-panel'] {
+    flex-grow: 1;
+  }
+}
+
+.shimmer_container {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 20px;
+}
+
+.shimmer {
+  width: 32px;
+  height: 32px;
+}

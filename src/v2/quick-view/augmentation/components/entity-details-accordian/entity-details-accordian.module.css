@@ -1,0 +1,16 @@
+.accordian_wrapper {
+  opacity: 1;
+  background: rgb(var(--ng-neutral-0));
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: var(--ng-rd-8);
+  box-shadow: var(--ng-gp-0) var(--ng-gp-1) var(--ng-gp-4) var(--ng-gp-0)
+    rgb(var(--ng-shadow-black-3));
+}
+
+.accordian_wrapper > div {
+  width: 100%;
+  border-radius: var(--ng-rd-8);
+}

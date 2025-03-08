@@ -1,0 +1,42 @@
+.wrapper {
+  /* Behavior */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button {
+  /* Size and Shape */
+  height: 24px !important;
+  width: 24px !important;
+}
+
+.icon {
+  /* Font */
+  font-size: var(--vcard-quick-action-icon-size);
+  text-align: center;
+
+  /* Color */
+  color: rgb(var(--marvin-secondary-text));
+}
+
+.shimmer {
+  /* Size and Shape */
+  height: 24px !important;
+  width: 24px !important;
+  border-radius: 2px !important;
+}
+
+.lead_starred_container {
+  cursor: pointer;
+}
+
+.starred_icon {
+  font-size: var(--vcard-quick-action-icon-size);
+  color: rgb(var(--marvin-amber-500));
+}
+
+.lead_starred_container div div {
+  height: 16px !important;
+  width: 16px !important;
+}

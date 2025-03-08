@@ -1,0 +1,40 @@
+.metrics {
+  width: 100%;
+}
+
+.metrics_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--ng-gp-4);
+}
+
+.metrics_grid > .metric_item:nth-child(odd):last-child {
+  grid-column: span 2;
+}
+
+.metric_item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--ng-gp-12);
+  background-color: rgba(var(--ng-neutral-0));
+  border-radius: var(--ng-rd-8);
+  text-align: left;
+  box-shadow: 0px 0px 5px 0px rgb(var(--ng-shadow-black-3));
+}
+
+.metric_label {
+  line-height: 20px;
+  color: rgba(var(--ng-lb-2-fs));
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100px;
+  text-align: left;
+}
+
+.metric_value {
+  line-height: 20px;
+  color: rgba(var(--ng-secondary-text));
+}

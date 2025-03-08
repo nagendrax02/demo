@@ -1,0 +1,149 @@
+.opportunity_icon {
+  background: rgb(85 116 136) !important;
+
+  & > svg {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 32px;
+    fill: rgb(var(--marvin-base));
+  }
+}
+
+.title_wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  font-size: 20px !important;
+  font-weight: 600;
+  line-height: 31.5px;
+  overflow: hidden;
+}
+
+.title_field {
+  color: rgb(var(--marvin-quaternary-text));
+}
+
+.title_value {
+  color: rgb(var(--marvin-primary-text));
+}
+
+.metadata_wrapper {
+  display: flex;
+  flex-direction: row;
+  color: rgb(var(--marvin-tertiary-text)) !important;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.seperator {
+  font-size: 4px;
+  max-width: 4px;
+  max-height: 4px;
+  color: rgb(var(--marvin-icon-1));
+}
+
+.value_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.vcard_action {
+  margin-inline-start: auto;
+  justify-content: flex-end;
+}
+
+.vcard_quick_action {
+  margin-inline-start: 12px;
+}
+
+.vcard_primary_section {
+  min-height: 32px !important;
+  align-items: center !important;
+}
+
+.badge_tooltip_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.badge_tooltip_field {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.badge_tooltip_field_name {
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 85px;
+  min-width: 70px;
+  color: rgb(var(--marvin-secondary-text));
+  font-weight: 500;
+}
+
+.badge_tooltip_field_value {
+  color: rgb(var(--marvin-secondary-text));
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 2px;
+  display: flex !important;
+  align-items: center;
+  min-width: fit-content;
+  outline: none;
+  box-sizing: border-box;
+  max-width: max-content !important;
+}
+
+.badge_won_color {
+  background-color: rgb(var(--marvin-green-100)) !important;
+  border: 1px solid rgb(var(--marvin-green-500)) !important;
+  color: rgb(var(--marvin-green-500)) !important;
+}
+
+.badge_won_color_dark {
+  background-color: rgb(var(--marvin-green-900)) !important;
+  border: 1px solid rgb(var(--marvin-green-300)) !important;
+  color: rgb(var(--marvin-green-300)) !important;
+}
+
+.badge_lost_color {
+  background-color: rgb(var(--marvin-red-100)) !important;
+  border: 1px solid rgb(var(--marvin-red-500)) !important;
+  color: rgb(var(--marvin-red-500)) !important;
+}
+
+.badge_lost_color_dark {
+  background-color: rgb(var(--marvin-red-900)) !important;
+  border: 1px solid rgb(var(--marvin-red-300)) !important;
+  color: rgb(var(--marvin-red-300)) !important;
+}
+
+.badge_default_color {
+  background-color: rgb(var(--marvin-amber-100)) !important;
+  border: 1px solid rgb(var(--marvin-amber-700)) !important;
+  color: rgb(var(--marvin-amber-700)) !important;
+}
+
+.badge_default_color_dark {
+  background-color: rgb(var(--marvin-amber-900)) !important;
+  border: 1px solid rgb(var(--marvin-amber-300)) !important;
+  color: rgb(var(--marvin-amber-300)) !important;
+}
+
+.secondary_section {
+  align-items: center !important;
+  flex-wrap: wrap;
+}
+
+.associated_lead_icon {
+  color: rgb(var(--marvin-primary));
+}

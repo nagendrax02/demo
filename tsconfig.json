@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "react": ["./node_modules/@types/react"],
+      "react-dom": ["./node_modules/@types/react-dom"],
+      "src/*": ["./src/*"],
+      "common/*": ["./src/common/*"],
+      "apps/*": ["./src/apps/*"],
+      "assets/*": ["./src/assets/*"],
+      "router/*": ["./src/router/*"],
+      "v2/*": ["./src/v2/*"],
+      "@lsq/nextgen-preact/v2/stylesmanager/global.min.css": [
+        "./node_modules/@lsq/nextgen-preact/v2/stylesmanager/global.min.css"
+      ]
+    },
+    "jsx": "react-jsx",
+    "lib": ["es6", "dom", "esnext", "dom.iterable"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "rootDir": "src",
+    "isolatedModules": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "noEmit": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true
+  },
+  "include": ["src", "src/config/global.d.ts", "src/config/test-setup.ts"],
+  "exclude": [
+    "node_modules",
+    "src/service-worker",
+    "src/index.js",
+    "public/env-config.js",
+    "public/service-worker.js",
+    "public/js/platform-swlite-loader.js"
+  ]
+}

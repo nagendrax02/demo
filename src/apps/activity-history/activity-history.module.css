@@ -1,0 +1,12 @@
+.activity_history_wrapper {
+  padding: 0 0 16px 16px;
+}
+
+.empty_state_container {
+  margin-top: 50px;
+  margin-inline-end: 16px;
+}
+
+.timeline_shimmer {
+  margin-top: 0;
+}

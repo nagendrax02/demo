@@ -1,0 +1,9 @@
+.header_overlay {
+  position: absolute;
+  min-height: 100%;
+  z-index: var(--marvin-overlay-z-index);
+  width: calc(100% + 2px); /* 2px added to cover header border */
+  top: 0;
+  overflow: hidden;
+  background-color: rgba(0 0 0 / var(--header-opactiy));
+}

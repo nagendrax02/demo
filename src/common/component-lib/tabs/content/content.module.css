@@ -1,0 +1,5 @@
+.content {
+  min-height: calc(100vh - 214px);
+  border: 1px solid rgb(var(--marvin-divider-1));
+  margin-inline: -1px;
+}

@@ -1,0 +1,19 @@
+.styled_link {
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(var(--marvin-primary));
+  word-break: break-all;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.styled_link:hover {
+  text-decoration: underline;
+}
+
+.styled_link:focus-visible {
+  outline: auto;
+}

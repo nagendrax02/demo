@@ -1,0 +1,74 @@
+.mark_task_button {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 20px;
+  height: 32px;
+  margin: 0 6px;
+
+  [class*='button_text'] {
+    top: 0;
+  }
+}
+
+.mark_task_icon {
+  font-size: 14px;
+  margin-inline-end: 4px;
+}
+
+.spinner {
+  height: 14px;
+  width: 14px;
+  margin-inline-end: 4px;
+
+  [class*='spinner'] {
+    height: 14px;
+    width: 14px;
+  }
+}
+
+.task_edit_delete {
+  height: 32px;
+  width: 32px;
+  padding: unset;
+  margin: 0 6px;
+
+  [class*='material-icons'] {
+    font-size: 20px;
+  }
+}
+
+.task_delete_modal {
+  width: 400px !important;
+
+  [class*='conf_header'] {
+    padding: 16px 16px 12px 20px;
+    align-items: center;
+  }
+
+  [class*='modal-footer'] {
+    padding: 16px 20px;
+  }
+
+  [class*='modal-body'] {
+    padding: 8px 20px;
+  }
+}
+
+.no_btn {
+  height: 32px;
+}
+
+.delete_btn {
+  height: 32px;
+  color: rgb(var(--marvin-danger-1));
+}
+
+.edit_spinner {
+  display: flex;
+
+  [class*='spinner'] {
+    height: 18px;
+    width: 18px;
+  }
+}

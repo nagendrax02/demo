@@ -1,0 +1,66 @@
+.field_container {
+  display: flex;
+  padding: 4px 0;
+  font-size: 12px;
+
+  @media (width <= 760px) {
+    display: block;
+  }
+}
+
+.field_display_name {
+  width: 35%;
+  min-width: 100px;
+  white-space: break-spaces;
+  word-break: break-word;
+  color: rgb(var(--marvin-quaternary-text));
+  margin-inline-end: 8px;
+}
+
+.field_value {
+  width: 60%;
+}
+
+.rule_triggered_container {
+  padding: 8px 0 4px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  border-bottom: solid 1px rgb(var(--marvin-divider-1));
+  color: rgb(var(--marvin-tertiary-text));
+}
+
+.rule_advance_search_condition_container {
+  margin: 8px 0;
+
+  [class*='query-readable-row'] {
+    [class*='condition'],
+    [class*='operator'] {
+      color: rgb(var(--marvin-orange-500));
+    }
+
+    [class*='option'] {
+      font-weight: 600;
+    }
+
+    [class*='free-text'],
+    [class*='option'] {
+      color: rgb(var(--marvin-secondary-text));
+    }
+  }
+
+  [class*='conditional-operator'] {
+    background-color: rgb(var(--marvin-primary-text));
+    border-radius: 10px;
+    color: rgb(var(--marvin-base));
+    margin-inline-end: 4px;
+    display: inline-flex;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.rule {
+  margin-bottom: 4px;
+}

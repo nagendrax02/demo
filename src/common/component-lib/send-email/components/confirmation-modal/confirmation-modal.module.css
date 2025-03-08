@@ -1,0 +1,33 @@
+.modal {
+  width: 400px !important;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.body_description {
+  margin-top: 4px;
+  color: rgb(var(--marvin-quaternary-text));
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.checkbox_area {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.footer {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  align-items: center;
+}

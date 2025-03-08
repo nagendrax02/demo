@@ -1,0 +1,18 @@
+.container {
+  width: max-content;
+  height: 40px;
+  max-height: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--ng-gp-4);
+  padding: var(--ng-gp-4);
+  border-radius: var(--ng-rd-8);
+  border: 1px solid rgba(var(--ng-neutral-30));
+  background-color: rgba(var(--ng-neutral-10));
+  box-sizing: border-box;
+
+  & * {
+    box-sizing: border-box;
+  }
+}

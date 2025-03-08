@@ -1,0 +1,8 @@
+.modal_content {
+  width: 800px !important;
+}
+
+.popup_body {
+  height: 450px !important;
+  padding: 1rem;
+}

@@ -1,0 +1,9 @@
+.access_denied {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.icon {
+  font-size: 80px;
+}

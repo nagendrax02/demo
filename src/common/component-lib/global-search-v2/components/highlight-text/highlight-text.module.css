@@ -1,0 +1,4 @@
+.hightlight_text {
+  background-color: rgba(var(--nextgen-primary-50));
+  border-radius: var(--ng-rd-4);
+}

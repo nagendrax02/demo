@@ -1,0 +1,28 @@
+.controlled_tooltip_wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.controlled_tooltip {
+  background-color: rgb(var(--marvin-success-4));
+  border-radius: 2px;
+  box-shadow: 0 -1px 8px 0 rgba(var(--marvin-primary-text), 0.2);
+  position: absolute;
+  right: -5px;
+  top: 32px;
+  width: 280px;
+  z-index: calc(var(--marvin-tooltip-z-index) - 1);
+}
+
+.controlled_tooltip .controlled_tooltip_arrow {
+  border-color: transparent transparent rgb(var(--marvin-success-4));
+  border-style: solid;
+  border-width: 0 12px 8px;
+  bottom: 100%;
+  height: 0;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  transform: translateX(-50%);
+  width: 0;
+}

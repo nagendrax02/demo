@@ -1,0 +1,11 @@
+.grid_quick_view_wrapper {
+  max-width: 312px;
+  width: 0;
+
+  /* transition: width 0.1s ease-in; Causing issue in recalculating of tab width when quick view is opened in case of SV top panel, need to implement a solution to keep both */
+}
+
+.populate_content {
+  width: 312px;
+  height: 100%;
+}

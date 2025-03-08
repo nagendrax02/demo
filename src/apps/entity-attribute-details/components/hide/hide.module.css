@@ -1,0 +1,11 @@
+.hide {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.label {
+  color: rgb(var(--marvin-secondary-text));
+  font-size: 13px;
+  cursor: pointer;
+}

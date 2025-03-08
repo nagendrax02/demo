@@ -1,0 +1,34 @@
+.submission_modal {
+  width: 650px !important;
+
+  [class*='icon-wrapper'] {
+    font-size: 20px;
+    color: rgb(var(--marvin-base));
+  }
+}
+
+.submission_body_content {
+  min-height: 370px !important;
+  max-height: 370px !important;
+  overflow-y: scroll;
+  padding: 16px;
+}
+
+.submission_body {
+  padding: 0 !important;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 370px;
+}
+
+.title {
+  width: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

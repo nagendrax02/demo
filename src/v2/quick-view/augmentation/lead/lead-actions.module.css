@@ -1,0 +1,102 @@
+.vcard_actions_wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ng-gp-12);
+}
+
+.vcard_actions_wrapper * {
+  display: flex;
+  flex: 1;
+}
+
+.vcard_footer_actions {
+  background: rgb(var(--ng-secondary-0)) !important;
+  outline: none !important;
+  border: none !important;
+  height: 28px !important;
+  display: flex;
+  flex: 1;
+  padding: 0 !important;
+
+  path {
+    fill: rgb(var(--ng-secondary-content-icon)) !important;
+  }
+
+  svg {
+    fill: rgb(var(--ng-secondary-content-icon)) !important;
+  }
+}
+
+.vcard_more_actions_btn {
+  display: flex;
+  width: 100%;
+}
+
+.vcard_more_actions_btn * {
+  display: flex;
+  flex: 1;
+}
+
+.vcard_footer_actions:hover {
+  background: rgb(var(--ng-secondary-10)) !important;
+}
+
+.vcard_footer_actions:active {
+  background: rgb(var(--ng-secondary-20)) !important;
+
+  path {
+    fill: rgb(var(--ng-neutral-white)) !important;
+  }
+}
+
+.vcard_footer_actions:disabled {
+  background: rgb(var(--ng-neutral-20)) !important;
+  cursor: not-allowed;
+
+  path {
+    fill: rgb(var(--ng-disabled-text)) !important;
+  }
+}
+
+.vcard_footer_actions_single_button {
+  background: rgb(var(--ng-secondary-0)) !important;
+  color: rgb(var(--ng-secondary-content-icon)) !important;
+  border: none !important;
+  border-radius: var(--ng-rd-6) !important;
+  display: flex;
+  flex: 1;
+  height: 28px !important;
+
+  [class*='icon-wrapper'] {
+    fill: rgb(var(--ng-secondary-content-icon)) !important;
+    color: rgb(var(--ng-secondary-content-icon)) !important;
+  }
+
+  svg {
+    fill: rgb(var(--ng-secondary-content-icon)) !important;
+    color: rgb(var(--ng-secondary-content-icon)) !important;
+  }
+}
+
+.custom_more_options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgb(var(--ng-secondary-0)) !important;
+  color: rgb(var(--ng-secondary-content-icon)) !important;
+  border: none !important;
+  border-radius: var(--ng-rd-6) !important;
+  flex: 1;
+  height: 28px !important;
+}
+
+.custom_more_options svg {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  fill: rgb(var(--ng-secondary-content-icon)) !important;
+  color: rgb(var(--ng-secondary-content-icon)) !important;
+}

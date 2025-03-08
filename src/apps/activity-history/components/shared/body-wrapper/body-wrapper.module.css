@@ -1,0 +1,92 @@
+.body {
+  font-size: 13px;
+  color: rgb(var(--marvin-secondary-text));
+  padding-inline-start: 24px;
+  word-break: break-all;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+
+  & [class*='body-content'] {
+    margin-inline-end: 8px;
+    overflow-x: auto;
+  }
+
+  & [class*='icon-wrapper'] {
+    font-size: 20px;
+    color: rgb(var(--marvin-primary));
+  }
+
+  @media screen and (width <= 768px) {
+    & {
+      padding: 0;
+      font-size: 14px;
+    }
+  }
+
+  & [class*='accordion-header'] {
+    padding: 0 !important;
+    background: none;
+
+    [class*='icon-wrapper'] {
+      margin-inline-start: -6px;
+    }
+  }
+
+  & [class*='accordion-name-container'] {
+    & > div {
+      color: rgb(var(--marvin-primary));
+      font-weight: var(--marvin-fw-semibold) !important;
+      font-size: 13px;
+      line-height: 20px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  & [class*='answered-call-wrapper'] {
+    display: flex;
+
+    & [class*='user-name'] {
+      display: contents;
+    }
+
+    & > div {
+      margin: 0 4px;
+      margin-top: -1px;
+      color: rgb(var(--marvin-secondary-text)) !important;
+    }
+  }
+
+  & [class*='phone-activity'] {
+    overflow: visible !important;
+
+    & [class*='accordion-name-container'] {
+      & > div {
+        font-weight: unset !important;
+        font-size: 12px;
+      }
+    }
+  }
+
+  & [class*='audio-player-wrapper'] {
+    margin-top: 8px;
+  }
+
+  & [class*='secondary-text-color'] {
+    color: rgb(var(--marvin-secondary-text)) !important;
+  }
+
+  & a {
+    color: rgb(var(--marvin-link));
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+}
+
+.body:has(> [class*='phone-activity']) {
+  overflow: visible;
+}

@@ -1,0 +1,84 @@
+.container {
+  margin-block: 12px;
+}
+
+.field_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  border-bottom: 2px solid rgb(var(--marvin-divider-1));
+  gap: 2px;
+}
+
+.header {
+  width: unset;
+  color: rgb(var(--marvin-secondary-text));
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid rgb(var(--marvin-divider-1));
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  font-size: 12px;
+  flex-direction: row;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+  padding: 6px 0;
+}
+
+.field_name {
+  color: rgb(var(--marvin-quaternary-text));
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 37%;
+  margin-inline-end: 18px;
+  flex-shrink: 0;
+}
+
+.field_value {
+  color: rgb(var(--marvin-primary-text));
+  font-size: 13px;
+  width: 100%;
+}
+
+.download_files {
+  color: rgba(var(--marvin-blue-500));
+  font-weight: normal;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: center;
+
+  &.loading {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+}
+
+.download_files_icon {
+  color: rgba(var(--marvin-blue-500));
+  margin-inline-end: 4px;
+  width: 16px !important;
+  height: 16px !important;
+  font-size: 18px !important;
+}
+
+.download_files_spinner {
+  margin-inline-start: 4px;
+  display: flex;
+  align-items: center;
+
+  & > div {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}

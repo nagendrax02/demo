@@ -1,0 +1,70 @@
+.actions_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  font-size: 20px !important;
+}
+
+.button {
+  padding: 5px !important;
+}
+
+.view_wrapper {
+  box-shadow:
+    60px 6px 95px 14px rgba(var(--marvin-border-1), 0.6),
+    60px 10px 90px 25px rgba(var(--marvin-border-1), 0.6);
+}
+
+.view_icon {
+  font-size: 20px !important;
+  margin-top: 1px;
+}
+
+.tooltip_text {
+  color: rgb(var(--marvin-secondary-text));
+}
+
+.cancel_modal {
+  width: 600px !important;
+
+  [class*='text-area'] {
+    min-height: 88px;
+  }
+}
+
+.title {
+  font-size: 14px;
+  margin-block-end: 10px;
+}
+
+.custom_body_container {
+  margin-block-end: 12px;
+}
+
+.spinner_style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancel_error_style {
+  color: rgb(var(--marvin-danger-1));
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  margin-bottom: 8px;
+  min-height: 16px;
+}
+
+.spinner > div {
+  width: 20px;
+  height: 20px;
+}
+
+.delete {
+  color: rgb(var(--marvin-danger-1));
+}

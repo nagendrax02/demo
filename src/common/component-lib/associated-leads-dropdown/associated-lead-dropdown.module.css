@@ -1,0 +1,101 @@
+.modal {
+  width: 500px !important;
+}
+
+.title {
+  display: inline-block;
+  align-items: center;
+  color: rgb(var(--marvin-secondary-text));
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  vertical-align: bottom;
+  width: 468px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.property_name {
+  position: relative;
+  box-sizing: border-box;
+  background-color: rgb(var(--marvin-background-1)) !important;
+  cursor: not-allowed !important;
+  pointer-events: initial !important;
+  border: 1px solid rgb(var(--marvin-border-1)) !important;
+  color: rgb(var(--marvin-secondary-text));
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.custom_container {
+  color: rgb(var(--marvin-secondary-text));
+  cursor: pointer;
+  display: block;
+  font-size: 13px;
+  padding: 6px 12px;
+  width: 100%;
+  user-select: none;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: normal !important;
+}
+
+.custom_content {
+  display: flex;
+}
+
+.associated_lead_container > div {
+  width: 100% !important;
+  z-index: 10;
+
+  [class*='option-item-label'] {
+    width: 100% !important;
+  }
+
+  [class*='option-item-label'] > div {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.associated_lead_container:hover {
+  [class*='input-container'] {
+    border: 1px solid rgb(var(--marvin-primary)) !important;
+  }
+}
+
+.custom_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: rgb(var(--marvin-secondary-text));
+  font-weight: 600;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.custom_label {
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(var(--marvin-quaternary-text));
+  margin-bottom: 2px;
+  line-height: 18px;
+  padding-inline-end: 4px;
+}
+
+.custom_value {
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(var(--marvin-secondary-text));
+  margin-bottom: 2px;
+  line-height: 18px;
+}

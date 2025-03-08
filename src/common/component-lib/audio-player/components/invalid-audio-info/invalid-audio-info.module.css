@@ -1,0 +1,94 @@
+.audio_issues_container {
+  padding: 10px;
+}
+
+.issue_wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  line-height: 20px;
+}
+
+.issue_wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.issue_info_modal_header {
+  [class*='icon-wrapper'] {
+    font-size: 24px !important;
+    color: rgb(var(--marvin-quaternary-text)) !important;
+    color: unset;
+  }
+
+  [class*='modal-title'] {
+    font-weight: var(--marvin-fw-bold);
+  }
+
+  [class*='title-wrapper'] {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    div:nth-child(2) {
+      color: rgb(var(--marvin-secondary-text));
+      line-height: 20px;
+    }
+  }
+}
+
+.issue_serial_number {
+  margin-inline-end: 10px;
+  font-size: 13px;
+  font-weight: var(--marvin-fw-semibold);
+}
+
+.issue_title {
+  margin-inline-end: 5px;
+  font-weight: var(--marvin-fw-semibold);
+}
+
+.issue_description {
+  flex: 1;
+}
+
+.issue_content {
+  flex: 1;
+  font-size: 13px;
+  word-break: keep-all;
+}
+
+.invalid_audio_download_wrapper {
+  display: flex;
+  align-items: center;
+
+  [class*='learn-more'] {
+    color: rgb(var(--marvin-primary));
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-inline-start: 8px;
+    font-weight: var(--marvin-fw-semibold);
+  }
+
+  [class*='download-audio-file'] {
+    margin-inline-start: 8px;
+    color: rgb(var(--marvin-primary)) !important;
+  }
+
+  [class*='invalid-audio-info-modal-button'] {
+    border: 1px solid rgb(var(--marvin-border-1)) !important;
+  }
+
+  @media only screen and (width <= 768px) {
+    & {
+      flex-direction: column;
+      align-items: flex-start;
+
+      [class*='download-audio-file'] {
+        margin-inline-start: 0;
+      }
+    }
+  }
+}

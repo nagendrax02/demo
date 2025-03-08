@@ -1,0 +1,45 @@
+.cfs_fields {
+  flex-direction: column;
+  border-radius: 1px;
+  border: 1px solid rgb(var(--marvin-divider-1));
+  margin: 20px 0;
+  grid-column: span 2 / auto;
+}
+
+.cfs_field {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 32px;
+  grid-auto-rows: minmax(20px, auto);
+  grid-auto-flow: row;
+  font-size: 16px;
+  padding-inline: 20px;
+}
+
+.header {
+  background: rgb(var(--marvin-background-2));
+  color: rgb(var(--marvin-secondary-text));
+  font-weight: 500;
+  padding-bottom: 4px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.name {
+  margin-inline-start: 12px;
+  padding: 8px 0;
+}
+
+.cfs_field_border {
+  border-bottom: 1px solid rgb(var(--marvin-divider-1));
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}

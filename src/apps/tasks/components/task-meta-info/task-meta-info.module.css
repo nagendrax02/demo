@@ -1,0 +1,24 @@
+.task_meta_info {
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.5;
+  margin-top: 8px;
+  font-size: 12px;
+  flex-wrap: wrap;
+  column-gap: 16px;
+}
+
+.task_info_title {
+  color: rgb(var(--marvin-quaternary-text));
+}
+
+.task_due_on {
+  display: flex;
+  align-items: center;
+}
+
+.task_due_on_icon {
+  font-size: 14px;
+  padding-inline-end: 4px;
+  color: rgb(var(--marvin-quaternary-text));
+}

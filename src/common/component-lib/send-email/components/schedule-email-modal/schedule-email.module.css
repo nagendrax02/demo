@@ -1,0 +1,55 @@
+.modal {
+  width: 400px !important;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  z-index: 1;
+
+  .datetime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & [class*='date_picker'] {
+      flex: 1;
+      z-index: 2;
+    }
+  }
+
+  .timezone {
+    margin-top: 10px;
+
+    & [class*='dropdown_container'] {
+      width: 100%;
+      margin-top: 5px;
+
+      & [class*='option-label'] div {
+        max-width: 90% !important;
+      }
+    }
+  }
+}
+
+.input_label {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 600;
+  color: rgb(var(--marvin-secondary-text));
+}
+
+.footer {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.error {
+  color: rgb(var(--marvin-danger-1));
+  font-size: 12px;
+  line-height: 16px;
+}

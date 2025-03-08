@@ -1,0 +1,10 @@
+.payment {
+  margin-inline-end: 8px;
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+}
+
+.activity_event_note {
+  margin-bottom: 4px;
+}

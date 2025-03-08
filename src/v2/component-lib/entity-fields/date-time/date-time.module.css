@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.date_time_container {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.separator {
+  display: inline-block;
+  min-width: 1px;
+  height: 9px;
+  background-color: rgb(var(--ng-neutral-40));
+  margin-inline: var(--ng-gp-4);
+}

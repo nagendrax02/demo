@@ -1,0 +1,67 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--ng-gp-12);
+  flex-shrink: 0;
+  padding: var(--ng-gp-4) var(--ng-gp-16) 0;
+  border-top: 1px solid rgba(var(--ng-border));
+}
+
+.keyboard_action_text {
+  color: rgb(var(--ng-tertiary-text));
+  line-height: 20px;
+}
+
+.keyboard_action_icon {
+  border-radius: var(--ng-rd-8);
+  border: 1px solid rgba(var(--ng-border));
+  height: 28px;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_text {
+  line-height: 20px;
+  color: rgb(var(--ng-secondary-text));
+}
+
+.icon_text_wrapper {
+  width: 32px;
+  height: 28px;
+  border-radius: var(--ng-rd-8);
+  border: 1px solid rgba(var(--ng-border));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard_action {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--ng-gp-8);
+}
+
+.keyboard_actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--ng-gp-16);
+}
+
+.footer_icons {
+  width: var(--ng-gp-16);
+  height: var(--ng-gp-16);
+  display: flex;
+  align-items: center;
+
+  path {
+    stroke: rgb(var(--ng-quaternary-text));
+  }
+}

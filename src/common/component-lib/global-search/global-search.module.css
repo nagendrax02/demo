@@ -1,0 +1,211 @@
+.search_wrapper {
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  background: rgba(var(--marvin-primary-text), 0.5);
+  display: flex;
+  place-content: center center;
+  z-index: var(--global-search-z-index);
+}
+
+.action {
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 6px;
+  color: rgb(var(--marvin-quaternary-text));
+
+  &:hover,
+  &.visible {
+    color: rgb(var(--marvin-primary));
+  }
+}
+
+.search_container {
+  margin-top: 24px;
+  max-width: 600px;
+  width: 96%;
+  position: relative;
+  height: fit-content;
+  color: rgb(var(--marvin-primary-text), 0.9);
+
+  [class*='input-element'] {
+    height: 48px;
+    padding: 10px 16px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 14px;
+    color: rgb(var(--marvin-primary-text));
+
+    &:hover {
+      border: 1px solid rgb(var(--marvin-primary));
+      box-shadow: 0 0 0 2px rgba(var(--marvin-primary), 0.25);
+    }
+  }
+
+  .close_icon {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: rgb(var(--marvin-tertiary-text), 0.75);
+    cursor: pointer;
+  }
+
+  .dropdown_container {
+    background-color: rgb(var(--marvin-base));
+    border-radius: 4px;
+    position: relative;
+    max-height: 310px;
+    overflow-y: auto;
+    top: 2px;
+
+    .record {
+      max-width: 85%;
+      padding: 10px;
+      display: flex;
+      flex: 1;
+      font-size: 14px;
+      text-decoration: none;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .history_item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px;
+      cursor: pointer;
+      border-bottom: 1px solid rgb(var(--marvin-icon-1));
+
+      &:hover {
+        background: rgb(var(--marvin-background-2));
+      }
+
+      .history_text {
+        color: rgb(var(--marvin-tertiary-text));
+        font-size: 13px;
+        line-height: 16px;
+        margin-inline-end: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 200px;
+      }
+
+      .action {
+        font-size: 16px;
+        margin-inline: 0 12px;
+
+        &:hover {
+          color: rgb(var(--marvin-quaternary-text));
+        }
+      }
+    }
+
+    .item_container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-bottom: 1px solid rgb(var(--marvin-icon-1));
+      padding-inline-end: 8px;
+
+      &:hover {
+        background-color: rgb(var(--marvin-background-2));
+      }
+    }
+
+    .actions_container {
+      justify-content: flex-start;
+      align-items: center;
+      display: flex;
+      opacity: 0;
+    }
+
+    .item_container:hover .actions_container,
+    .actions_container.visible {
+      opacity: 1;
+    }
+
+    .name {
+      margin-inline: 8px 12px;
+      white-space: nowrap;
+      color: rgb(var(--marvin-primary-text));
+      overflow: hidden;
+      font-size: 13px;
+      text-overflow: ellipsis;
+      line-height: 20px;
+    }
+
+    .contact_info {
+      color: rgb(var(--marvin-tertiary-text));
+      font-size: 11px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 16px;
+    }
+
+    .email_info {
+      overflow: hidden;
+      line-height: 16px;
+    }
+
+    .seperator {
+      width: 5px;
+      height: 5px;
+      background-color: rgb(var(--marvin-tertiary-text));
+      border-radius: 50%;
+      margin-inline-end: 10px;
+    }
+
+    .search_shimmer {
+      padding: 10px 0;
+      text-align: center;
+
+      & div {
+        width: 95%;
+        height: 30px;
+      }
+    }
+  }
+}
+
+.profile_icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: var(--marvin-fw-regular);
+  text-align: center;
+  color: rgb(var(--marvin-base));
+  background-color: rgb(var(--marvin-warning-1));
+  background-image: radial-gradient(
+    circle at 90% 65%,
+    rgba(var(--marvin-primary-text), 0.1) 35%,
+    transparent 40%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.view_results {
+  padding: 12px;
+  color: rgb(var(--marvin-primary));
+  text-align: start;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.no_records {
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  color: rgb(var(--marvin-primary-text));
+}

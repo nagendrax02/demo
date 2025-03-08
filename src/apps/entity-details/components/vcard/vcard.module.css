@@ -1,0 +1,141 @@
+.vcard_container {
+  /* Size and Shape */
+  min-height: var(--vcard-height);
+  padding: 16px;
+
+  /* Color */
+  background-color: rgb(var(--marvin-base));
+  box-shadow: 0 1px 1px 0 rgba(var(--marvin-primary-text), 0.16);
+
+  /* Behavior */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  box-sizing: border-box;
+  z-index: var(--marvin-vcard-z-index);
+}
+
+.mobile_vcard {
+  position: relative !important;
+}
+
+.body {
+  /* Size and Shape */
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.footer {
+  /* Behavior */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.icon_wrapper {
+  /* Behavior */
+  display: flex;
+  justify-content: flex-start;
+}
+
+.section_wrapper {
+  /* Size and Shape */
+  width: calc(100% - 80px);
+
+  /* Behavior */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+.section {
+  /* Size and Shape */
+  width: 100%;
+
+  /* Behavior */
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.primary_shimmer_wrapper {
+  /* Size and Shape */
+  width: 100%;
+
+  /* Behavior */
+  display: flex;
+  flex-direction: row;
+}
+
+.primary_shimmer {
+  /* Size and Shape */
+  width: 30%;
+  height: 30px;
+  border-radius: 2px;
+}
+
+.primary_shimmer_right {
+  /* Size and Shape */
+  width: 25%;
+  height: 32px;
+  border-radius: 2px;
+  margin-inline-start: auto;
+}
+
+.secondary_shimmer {
+  /* Size and Shape */
+  width: 50%;
+  height: 28px;
+  border-radius: 2px;
+}
+
+.tertiary_shimmer_wrapper {
+  /* Size and Shape */
+  width: 100%;
+
+  /* Behavior */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tertiary_shimmer {
+  /* Size and Shape */
+  width: 70%;
+  height: 22px;
+  border-radius: 2px;
+}
+
+.footer_shimmer_wrapper {
+  /* Size and Shape */
+  width: 100%;
+
+  /* Behavior */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer_shimmer {
+  /* Size and Shape */
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+}
+
+.field_seperator {
+  font-size: 4px;
+  max-width: 4px;
+  max-height: 4px;
+  margin-inline: 4px;
+
+  /* Color */
+  color: rgb(var(--marvin-icon-1));
+}

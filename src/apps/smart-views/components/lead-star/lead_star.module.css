@@ -1,0 +1,31 @@
+.lead_start {
+  width: 16px;
+  height: 16px;
+  padding-top: 3px;
+  cursor: pointer;
+}
+
+.button {
+  all: inherit;
+  border: none;
+}
+
+.lead_empty_star {
+  fill: rgb(var(--ng-neutral-70));
+}
+
+.lead_filled_star {
+  & path {
+    fill: rgb(var(--ng-yellow-50));
+  }
+}
+
+.custom_spinner_style {
+  [class*='spinner'] {
+    height: 12px !important;
+    width: 12px !important;
+    color: rgb(var(--marvin-amber-500)) !important;
+    margin-inline-end: 4px;
+    margin-top: 3px;
+  }
+}

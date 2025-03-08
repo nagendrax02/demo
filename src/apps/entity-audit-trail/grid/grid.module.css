@@ -1,0 +1,15 @@
+.grid_wrapper {
+  [class*='audit_trail_record_even'] {
+    background-color: rgb(var(--marvin-background-1));
+  }
+
+  th [class*='cell-content'] {
+    width: 100%;
+    text-align: start;
+    margin-inline-start: 2px;
+  }
+
+  [class*='header-eventLogNewValue'] > div {
+    border-right: none;
+  }
+}

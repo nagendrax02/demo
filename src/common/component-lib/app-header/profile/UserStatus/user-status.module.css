@@ -1,0 +1,77 @@
+.user_status_container {
+  display: flex;
+  padding: var(--ng-gp-2) var(--ng-gp-4);
+  align-items: center;
+  gap: var(--ng-gp-0);
+  align-self: stretch;
+
+  & > div {
+    width: 100%;
+  }
+
+  & > div > button {
+    display: block;
+    width: 100%;
+  }
+}
+
+.user_status_inner_container {
+  display: flex;
+  min-height: 28px;
+  padding: var(--ng-gp-2) var(--ng-gp-8);
+  align-items: center;
+  gap: var(--ng-gp-4);
+  flex: 1 0 0;
+  border-radius: var(--ng-rd-6);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(var(--ng-neutral-20));
+  }
+}
+
+.user_current_status {
+  display: flex;
+  align-items: center;
+  gap: var(--ng-gp-4);
+  flex: 1 0 0;
+
+  & > div {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+
+  & > span {
+    color: rgba(var(--ng-neutral-80));
+  }
+}
+
+.status_icon {
+  width: 14px;
+  height: 14px;
+}
+
+.status_arrow {
+  width: 16px;
+  height: 16px;
+  transform: rotate(270deg);
+
+  & > path {
+    fill: rgba(var(--ng-neutral-80));
+  }
+}
+
+.status_options_container {
+  display: flex;
+  width: 135px;
+  padding: var(--ng-gp-2) var(--ng-gp-0);
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: var(--ng-rd-8);
+  border: 1px solid rgba(var(--ng-neutral-30));
+  background: rgba(var(--ng-neutral-0));
+  box-shadow:
+    var(--ng-gp-0) var(--ng-gp-12) var(--ng-gp-16) -4px rgba(var(--ng-shadow-grey-8)),
+    var(--ng-gp-0) var(--ng-gp-4) var(--ng-gp-6) -2px rgba(var(--ng-shadow-grey-3));
+}

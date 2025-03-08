@@ -1,0 +1,10 @@
+.error_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.error {
+  color: rgb(var(--marvin-danger-1));
+  font-size: 13px;
+}

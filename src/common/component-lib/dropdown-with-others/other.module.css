@@ -1,0 +1,13 @@
+.other_input_wrapper {
+  margin-top: 8px;
+}
+
+.dd_wrapper {
+  [class*='dropdown_container'] {
+    width: 100%;
+  }
+}
+
+.custom_input {
+  border: 1px solid rgb(var(--marvin-border-1));
+}

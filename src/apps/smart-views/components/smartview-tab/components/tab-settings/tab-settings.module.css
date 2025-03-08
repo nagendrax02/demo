@@ -1,0 +1,151 @@
+.modal_lg {
+  width: 720px !important;
+}
+
+.modal_sm {
+  width: 480px !important;
+}
+
+.modal_header_title {
+  display: flex;
+  flex-direction: row;
+  gap: var(--ng-gp-12);
+  color: rgb(var(--ng-primary-text));
+  align-items: center;
+}
+
+.modal_body {
+  display: flex;
+  padding: 0 !important;
+  overflow: hidden;
+  height: 100vh;
+
+  & * {
+    box-sizing: border-box;
+  }
+
+  & > div {
+    width: 100%;
+  }
+
+  flex-direction: column;
+
+  .wrapper {
+    display: flex;
+  }
+
+  .panel {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+
+    .left {
+      display: flex;
+      flex: 1 1 50%;
+      word-break: break-all;
+    }
+
+    .right {
+      display: flex;
+      min-width: 50%;
+    }
+
+    .divider {
+      border-inline-start: 1px solid rgb(var(--marvin-divider-1));
+      margin-inline: var(--ng-gp-12);
+    }
+  }
+
+  &.export_action {
+    height: auto;
+  }
+}
+
+.restore {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: rgb(var(--marvin-tertiary-text));
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.restore_icon {
+  color: rgb(var(--marvin-tertiary-text));
+  font-size: 18px;
+}
+
+.body_container {
+  display: flex;
+  padding: 18px;
+  border-bottom: 1px solid rgb(var(--ng-border));
+
+  &.hide_border {
+    border-bottom: none;
+  }
+}
+
+.name {
+  color: rgb(var(--marvin-secondary-text));
+  font-weight: var(--marvin-fw-semibold);
+  margin-inline-end: 32px;
+  font-size: 14px;
+}
+
+.radio {
+  display: flex;
+  column-gap: 24px;
+}
+
+.export_entity {
+  max-height: calc(100% - 53px);
+}
+
+.hide_body {
+  display: none !important;
+}
+
+.show_body {
+  display: flex !important;
+}
+
+.custom_fields_select {
+  display: flex;
+}
+
+.success_message_wrapper {
+  padding: 24px;
+
+  [class*='success-wrapper'] {
+    overflow-y: hidden !important;
+  }
+}
+
+.radio_button_with_info {
+  display: flex;
+}
+
+.info_icon {
+  color: rgb(var(--marvin-quaternary-text));
+  font-size: 16px;
+}
+
+.info_icon:hover {
+  color: rgb(var(--marvin-tertiary-text));
+  cursor: pointer;
+}
+
+.field_count {
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 16px;
+}
+
+.modal_footer {
+  gap: var(--ng-gp-8);
+}
+
+.footer_button {
+  width: 105px;
+}

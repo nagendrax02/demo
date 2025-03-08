@@ -1,0 +1,100 @@
+export const workAreaIds = {
+  SEARCH: {
+    ADD_LEAD: 202,
+    ADD_TASK: 203,
+    ADD_ACTIVITY: 204,
+    ADD_OPPORTUNITY: 205
+  },
+  QUICK: {
+    ADD_LEAD: 202,
+    ADD_TASK: 203,
+    ADD_ACTIVITY: 204,
+    ADD_OPPORTUNITY: 205
+  },
+  SMART_VIEWS: {
+    LEAD_TAB: {
+      ADD_ACTIVITY: 25,
+      ADD_TASK: 61,
+      EDIT: 20
+    },
+
+    ACTIVITY_TAB: {
+      EDIT: 22
+    },
+
+    OPPORTUNITY_TAB: {
+      ADD_TASK: 70,
+      ADD_ACTIVITY: 59,
+      EDIT: 57,
+      ADD_OPPORTUNITY: 56,
+      ADD_LEAD: 58
+    },
+
+    TASK_TAB: {
+      ADD: 38,
+      EDIT: 39,
+      ADD_ACTIVITY_FOR_LEAD: 65,
+      ADD_TASK_FOR_LEAD: 63,
+      EDIT_LEAD: 64
+    }
+  },
+  MORE_ACTION: {
+    LEAD: {
+      ADD_NEW: 18,
+      QUICK_ADD: 17
+    },
+    MANAGE_LEADS: {
+      ADD_NEW: 11,
+      QUICK_ADD: 9
+    }
+  },
+
+  LEAD_DETAILS: {
+    EDIT_TASK: 36,
+    EDIT_ACTIVITY: 33,
+    EDIT_LEAD: 28,
+    ADD_ACTIVITY: 27,
+    ADD_OPPORTUNITY: 44,
+    ADD_TASK: 37,
+    EDIT_OPPORTUNITY: 45,
+    EDIT_VCARD: 73,
+    EDIT_LEAD_DETAILS: 72
+  },
+
+  OPPORTUNITY_DETAILS: {
+    EDIT_TASK: 55,
+    EDIT_ACTIVITY: 54,
+    ADD_ACTIVITY: 50,
+    ADD_TASK: 52,
+    EDIT_OPPORTUNITY: 53,
+    EDIT_OPPORTUNITY_DETAILS: 71,
+    EDIT_OPPORTUNITY_DETAILS_V_CARD: 74
+  },
+  MANAGE_OPPORTUNITIES: {
+    EDIT: 48,
+    ADD_ACTIVITY: 60,
+    ADD_TASK: 69
+  },
+  MANAGE_LEADS: {
+    ADD_ACTIVITY: 24,
+    ADD_TASK: 60,
+    EDIT: 12
+  },
+  TELEPHONY: {
+    AGENT_POPUP: {
+      INBOUND_PHONE_CALL: 42,
+      OUTBOUND_PHONE_CALL: 43
+    }
+  },
+  MANAGE_TASKS: {
+    ADD: 34,
+    EDIT: 35
+  },
+  MANAGE_ACTIVTIES: {
+    ADD_ACTIVITY: 15,
+    ADD_LEAD: 14,
+    EDIT: 16
+  },
+
+  NA: -1
+};

@@ -1,0 +1,23 @@
+.footer {
+  background: rgb(var(--marvin-base));
+  padding: 16px 16px 60px;
+}
+
+.button_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 100%;
+}
+
+.button {
+  padding: 5px 6px !important;
+  background: rgb(var(--marvin-base));
+  color: rgb(var(--marvin-secondary-text));
+  border: 1px solid rgb(var(--marvin-border-1));
+}
+
+.left_button > span {
+  rotate: 180deg;
+}

@@ -1,0 +1,13 @@
+.place_icon {
+  height: 20px !important;
+  width: 20px !important;
+  color: rgb(var(--marvin-primary)) !important;
+  cursor: pointer;
+  margin-top: -4px;
+  margin-inline-start: 8px;
+}
+
+.iframe {
+  width: 100%;
+  border: none;
+}

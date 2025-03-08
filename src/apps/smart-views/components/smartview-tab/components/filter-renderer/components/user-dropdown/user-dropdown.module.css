@@ -1,0 +1,29 @@
+.user_option_container {
+  min-height: 28px;
+  line-height: normal;
+  user-select: none;
+  width: 0;
+  flex: 1 0 0;
+}
+
+.user_label {
+  color: rgba(var(--ng-neutral-80));
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.user_text {
+  color: rgba(var(--ng-neutral-60));
+  font-size: 12px;
+  margin-top: 4px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.user_filter {
+  [class*='ng-dd-checkbox-item-content'] {
+    align-items: start;
+  }
+}

@@ -1,0 +1,6 @@
+.iframe_embed_html {
+  border: 1px solid rgb(var(--marvin-divider-1));
+  overflow: hidden !important;
+  margin: 0 !important;
+  overflow-clip-margin: unset !important;
+}

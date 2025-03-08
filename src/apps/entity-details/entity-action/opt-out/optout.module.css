@@ -1,0 +1,56 @@
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.primary {
+  margin: 3.5px;
+}
+
+.secondary {
+  margin: 3.5px;
+}
+
+.body {
+  min-height: 138px;
+  width: 100%;
+}
+
+.body_header {
+  font-size: 14px;
+  color: rgb(var(--marvin-secondary-text));
+  display: flex;
+  align-items: center;
+}
+
+.body_header_label {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 4px;
+  margin-inline-end: 6px;
+  display: inline-block;
+  color: rgb(var(--marvin-secondary-text));
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.modal {
+  width: 500px !important;
+}
+
+.body_container {
+  width: 100%;
+}
+
+.text_area_container {
+  width: 100%;
+
+  [class*='text-area'] {
+    max-height: 360px;
+  }
+}

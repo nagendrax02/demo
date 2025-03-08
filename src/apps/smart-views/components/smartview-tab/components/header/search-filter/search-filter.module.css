@@ -1,0 +1,88 @@
+.search_container {
+  position: relative;
+  height: fit-content;
+  color: rgb(var(--marvin-primary-text), 0.9);
+
+  [class*='input-element'] {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(var(--marvin-border-1));
+    padding-inline: 12px 25px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: rgb(var(--marvin-primary-text));
+
+    &:hover {
+      border: 1px solid rgb(var(--marvin-primary));
+      box-shadow: 0 0 0 2px rgba(var(--marvin-primary), 0.25);
+    }
+  }
+
+  .icon {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    color: rgb(var(--marvin-tertiary-text), 0.75);
+
+    [class*='icon-wrapper'] {
+      font-size: 16px;
+    }
+  }
+
+  .pointer_event_none {
+    pointer-events: none;
+  }
+
+  .cursor_pointer {
+    cursor: pointer;
+  }
+}
+
+button.clear_filters {
+  display: flex;
+  padding: var(--ng-gp-4) var(--ng-gp-12);
+  justify-content: center;
+  align-items: center;
+  gap: var(--ng-gp-4);
+  border-radius: var(--ng-rd-6);
+  background: rgba(var(--ng-error-0));
+  color: rgba(var(--ng-error-60));
+  border: none;
+
+  & svg {
+    fill: rgba(var(--ng-error-60));
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    border: none;
+    background: rgba(var(--ng-error-10));
+  }
+}
+
+.trigger_quick_filter_applied {
+  [class*='sub-label'] {
+    background-color: rgba(var(--ng-green-0)) !important;
+  }
+}
+
+.trigger_quick_filter_disabled {
+  pointer-events: none;
+}
+
+.trigger_quick_filter {
+  border: 1px solid rgba(var(--ng-green-10)) !important;
+}
+
+.input_container {
+  height: 28px;
+}
+
+.search_wrapper {
+  width: 120px;
+
+  [class*='ng-tf-input'] {
+    width: 75px;
+  }
+}

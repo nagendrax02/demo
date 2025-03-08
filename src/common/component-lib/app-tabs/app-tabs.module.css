@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  max-height: 35px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.divider {
+  width: 1px;
+  margin-inline: 10px 10px;
+  height: 35px;
+  background-color: rgb(var(--marvin-divider-1));
+}

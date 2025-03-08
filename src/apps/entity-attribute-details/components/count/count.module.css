@@ -1,0 +1,14 @@
+.count {
+  background: rgb(var(--marvin-background-1));
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 5px 16px;
+  margin-inline-end: 14px;
+  color: rgb(var(--marvin-secondary-text));
+  font-size: 13px;
+  height: 32px;
+  box-sizing: border-box;
+  min-width: 91px;
+  justify-content: center;
+}

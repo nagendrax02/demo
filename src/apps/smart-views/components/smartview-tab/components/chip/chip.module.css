@@ -1,0 +1,44 @@
+.chip {
+  display: flex;
+  height: 28px;
+  padding: var(--ng-gp-4) var(--ng-gp-4) var(--ng-gp-4) var(--ng-gp-8);
+  justify-content: center;
+  align-items: center;
+  gap: var(--ng-gp-4);
+  border-radius: var(--ng-rd-6);
+  border: 1px solid rgba(var(--ng-neutral-30));
+  background: rgba(var(--ng-neutral-0));
+  box-sizing: border-box;
+  font-family: Mulish, serif;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.chip_label {
+  min-width: 40px;
+  max-width: 80px;
+  overflow: hidden;
+  color: var(--ng-neutral-80);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chip_sublabel {
+  display: flex;
+  max-width: 92px;
+  padding: var(--ng-gp-4) var(--ng-gp-8);
+  justify-content: center;
+  align-items: center;
+  gap: var(--ng-gp-4);
+  align-self: stretch;
+  border-radius: var(--ng-rd-4);
+  background: rgba(var(--ng-neutral-20));
+}
+
+.close_icon {
+  font-size: 16px;
+  color: rgba(var(--ng-neutral-60));
+  pointer-events: all;
+}

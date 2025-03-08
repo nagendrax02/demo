@@ -1,0 +1,4 @@
+.custom_tab {
+  padding: var(--ng-gp-16) 15px;
+  background: rgb(var(--ng-neutral-0));
+}

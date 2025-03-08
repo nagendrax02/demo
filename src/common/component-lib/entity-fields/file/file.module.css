@@ -1,0 +1,9 @@
+.files {
+  margin-inline-start: -3px;
+}
+
+.view_files {
+  color: rgb(var(--marvin-primary));
+  cursor: pointer;
+  width: fit-content !important;
+}

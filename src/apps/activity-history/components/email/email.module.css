@@ -1,0 +1,8 @@
+.link {
+  cursor: pointer;
+  color: rgb(var(--marvin-primary));
+}
+
+.margin_right {
+  margin-inline-end: 8px;
+}

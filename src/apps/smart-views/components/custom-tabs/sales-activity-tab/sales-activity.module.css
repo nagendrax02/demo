@@ -1,0 +1,5 @@
+.sales_activity_tab {
+  [class*='grid-row-actions-cell'] {
+    justify-content: center;
+  }
+}

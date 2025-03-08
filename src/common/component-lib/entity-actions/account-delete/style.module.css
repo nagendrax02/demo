@@ -1,0 +1,27 @@
+.custom_body {
+  [class*='confirmation-body'] {
+    padding: 0 16px !important;
+  }
+}
+
+.delete_button {
+  color: rgb(var(--marvin-danger-1));
+}
+
+.delete_all_checkbox_container {
+  margin-bottom: 24px;
+}
+
+.disc_header {
+  margin-bottom: 24px;
+}
+
+.delete_all {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  cursor: pointer;
+}

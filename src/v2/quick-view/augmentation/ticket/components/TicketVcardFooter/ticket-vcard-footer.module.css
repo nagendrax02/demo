@@ -1,0 +1,22 @@
+.vcard_footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resolution_time_icon {
+  width: 14px;
+  height: 15px;
+
+  path {
+    fill: rgb(var(--ng-yellow-70));
+  }
+}
+
+.resolution_time {
+  display: flex;
+  gap: var(--ng-gp-4);
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,141 @@
+.wrapper {
+  height: 40px;
+  width: 100%;
+  background: rgb(var(--marvin-base));
+  border: 1px solid rgb(var(--marvin-divider-1));
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 4px;
+  padding: 10px;
+
+  & * {
+    box-sizing: border-box;
+    user-select: none;
+  }
+
+  &:hover {
+    border-color: rgb(var(--marvin-primary));
+
+    [class*='folder_action_wrapper'] {
+      display: flex;
+    }
+  }
+
+  &.new_folder {
+    cursor: pointer;
+  }
+
+  &.new_folder_input_wrapper {
+    padding-block: 0;
+    padding-inline: 4px;
+  }
+}
+
+.existing_folder_icon,
+.new_folder_icon {
+  font-size: 24px;
+}
+
+.existing_folder_icon {
+  color: rgb(244 184 89);
+}
+
+.new_folder_icon {
+  color: rgb(var(--marvin-primary));
+}
+
+.existing_folder_name,
+.new_folder_name {
+  font-size: 13px;
+  max-width: 265px;
+  font-weight: 600;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.existing_folder_name {
+  color: rgb(var(--marvin-secondary-text));
+}
+
+.new_folder_name {
+  color: rgb(var(--marvin-primary));
+}
+
+.new_folder_save_button,
+.new_folder_clear_icon {
+  border-radius: 2px;
+  height: 26px !important;
+  width: 26px !important;
+  position: relative;
+
+  & > span {
+    font-size: 24px;
+  }
+}
+
+.new_folder_save_button {
+  border: 1px solid rgb(var(--marvin-primary));
+  background: rgb(48 154 252);
+
+  & > span {
+    color: rgb(var(--marvin-base));
+  }
+
+  &:hover {
+    background-color: rgb(48 140 225);
+  }
+}
+
+.new_folder_clear_icon {
+  background: rgb(var(--marvin-base));
+  border: 1px solid rgb(var(--marvin-divider-1));
+
+  & > span {
+    color: rgb(var(--marvin-quaternary-text));
+  }
+
+  &:hover {
+    background-color: rgb(var(--marvin-background-2));
+  }
+}
+
+.new_folder_input {
+  position: relative;
+  height: 26px !important;
+  width: 82% !important;
+  border-radius: 2px;
+  border: 1px solid rgb(48 154 252) !important;
+}
+
+.hover_action_wrapper {
+  display: none;
+  flex-direction: row;
+  gap: 10px;
+  margin-inline-start: auto;
+}
+
+.hover_action_edit,
+.hover_action_delete {
+  background: none !important;
+  padding: 0;
+
+  & > span {
+    color: rgb(var(--marvin-quaternary-text));
+    font-size: 20px;
+  }
+
+  & > span:hover {
+    color: rgba(var(--marvin-tertiary-text), 0.9);
+  }
+}
+
+.delete_action_message {
+  width: 82%;
+  font-size: 13px;
+  padding: 4px;
+  color: rgb(var(--marvin-secondary-text));
+}

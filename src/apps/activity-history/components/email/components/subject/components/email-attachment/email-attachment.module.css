@@ -1,0 +1,49 @@
+.attachment_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+
+  @media screen and (width <= 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.attachment {
+  cursor: pointer;
+  padding: 4px 8px;
+  border: 1px solid rgb(var(--marvin-border-1));
+  width: 100%;
+  display: flex;
+  border-radius: 2px;
+  gap: 8px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+}
+
+.name {
+  width: 184px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  color: rgb(var(--marvin-primary));
+  box-sizing: border-box;
+}
+
+.visibility_icon {
+  font-size: 20px !important;
+  color: rgb(var(--marvin-primary)) !important;
+  width: 16px !important;
+  height: 16px !important;
+  padding-top: 2px;
+}

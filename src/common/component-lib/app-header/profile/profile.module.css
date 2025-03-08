@@ -1,0 +1,18 @@
+.profile_separator {
+  width: fit-content;
+}
+
+.profile_popover {
+  display: flex;
+  width: 264px;
+  padding: var(--ng-gp-4) var(--ng-gp-0);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--ng-rd-12);
+  border: 1px solid rgba(var(--marvin-divider-1));
+  background: rgba(var(--ng-neutral-0));
+  box-shadow:
+    var(--ng-gp-0) var(--ng-gp-12) var(--ng-gp-16) -4px rgba(var(--ng-shadow-black-8)),
+    var(--ng-gp-0) var(--ng-gp-4) var(--ng-gp-6) -2px rgba(var(--ng-shadow-black-3));
+}

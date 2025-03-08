@@ -1,0 +1,63 @@
+.icon {
+  color: rgb(var(--marvin-base));
+}
+
+.icon_wrapper {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(var(--marvin-light-green-500));
+
+  span {
+    font-size: 20px !important;
+  }
+
+  @media screen and (width <= 768px) {
+    & {
+      margin: 0 16px;
+    }
+  }
+}
+
+.bg_blue_500 {
+  background: rgb(var(--marvin-blue-500)) !important;
+}
+
+.bg_blue_700 {
+  background: rgb(var(--marvin-blue-700)) !important;
+}
+
+.bg_sky_500 {
+  background: rgb(var(--marvin-sky-500)) !important;
+}
+
+.bg_cyan_500 {
+  background: rgb(var(--marvin-cyan-500)) !important;
+}
+
+.bg_purple_500 {
+  background: rgb(var(--marvin-purple-500)) !important;
+}
+
+.bg_green_500 {
+  background: rgb(var(--marvin-green-500)) !important;
+}
+
+.bg_danger_1 {
+  background: rgb(var(--marvin-danger-1)) !important;
+}
+
+.bg_orange_500 {
+  background: rgb(var(--marvin-orange-500)) !important;
+}
+
+.bg_red_700 {
+  background: rgb(var(--marvin-red-700)) !important;
+}
+
+.bg_indigo_500 {
+  background: rgb(var(--marvin-indigo-500)) !important;
+}

@@ -1,0 +1,56 @@
+@keyframes frame1 {
+  from {
+    stroke-dashoffset: 260;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes frame2 {
+  from {
+    stroke-dashoffset: 380;
+  }
+
+  to {
+    stroke-dashoffset: 130;
+  }
+}
+
+@keyframes frame3 {
+  from {
+    stroke-dashoffset: 5940;
+  }
+
+  to {
+    stroke-dashoffset: 2940;
+  }
+}
+
+.animation_svg {
+  width: 86px;
+  height: 86px;
+  margin-bottom: 32px;
+}
+
+.animation_path {
+  fill: transparent;
+  stroke: rgb(var(--marvin-success-1));
+  stroke-width: 4;
+
+  &.path1 {
+    stroke-dasharray: 260;
+    animation: frame1 1s;
+  }
+
+  &.path2 {
+    stroke-dasharray: 260;
+    animation: frame2 1s;
+  }
+
+  &.path3 {
+    stroke-dasharray: 3000;
+    animation: frame3 1s;
+  }
+}

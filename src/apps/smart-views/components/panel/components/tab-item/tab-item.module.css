@@ -1,0 +1,47 @@
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-inline-end: 10px;
+  color: var(--tab-primary-color);
+  fill: var(--tab-primary-color);
+
+  & span {
+    font-size: 20px;
+  }
+
+  & svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.tab_title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  width: 180px;
+}
+
+.record_count {
+  margin-inline-start: 4px;
+  font-weight: var(--marvin-fw-regular);
+}
+
+.mavis_tab_icon {
+  & path {
+    stroke: var(--tab-primary-color);
+  }
+}
+
+.tab_icon_container {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab_icon {
+  height: 16px;
+  width: 16px;
+}

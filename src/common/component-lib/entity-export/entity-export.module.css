@@ -1,0 +1,9 @@
+.custom_spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_container {
+  width: 1024px !important;
+}

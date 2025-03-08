@@ -1,0 +1,41 @@
+.download_files {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-inline-end: 12px;
+  /* stylelint-disable-next-line color-function-notation */
+  color: rgb(17, 111, 214);
+
+  [class*='icon-wrapper'] {
+    font-size: 20px;
+    color: rgb(var(--marvin-primary)) !important;
+  }
+}
+
+.download_icon {
+  font-size: 16px;
+  margin-inline-end: -35px;
+  margin-top: 4px;
+  color: rgb(var(--marvin-primary)) !important;
+}
+
+.download_text {
+  font-size: 12px;
+}
+
+.disable_download {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.spinner {
+  padding-inline-start: 8px;
+  padding-top: 4px;
+
+  [class*='spinner'] {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}

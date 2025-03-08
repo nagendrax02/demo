@@ -1,0 +1,20 @@
+.phone_wrapper {
+  text-decoration: none;
+  color: rgb(var(--ng-neutral-70));
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.hover_state {
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(var(--ng-primary-text));
+  }
+}
+
+.disabled {
+  color: rgb(var(--ng-disabled-text));
+  cursor: default;
+}

@@ -1,0 +1,33 @@
+.modal {
+  width: 500px !important;
+}
+
+.body {
+  min-height: 138px;
+
+  [class*='success-wrapper'] {
+    line-height: 1.5 !important;
+    width: 750px;
+  }
+}
+
+.success_modal {
+  width: 800px !important;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  margin: 3.5px;
+}
+
+.request_history_link {
+  color: rgb(var(--marvin-primary));
+  font-weight: var(--marvin-fw-semibold);
+  margin-inline-start: var(--ng-gp-4);
+  cursor: pointer;
+  text-decoration: none;
+}

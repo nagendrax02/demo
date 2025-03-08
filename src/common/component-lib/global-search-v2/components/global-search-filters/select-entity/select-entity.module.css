@@ -1,0 +1,31 @@
+.dropdown_content {
+  z-index: 9999999;
+}
+
+[data-radix-popper-content-wrapper] {
+  z-index: var(--action-menu-z-index) !important;
+}
+
+.trigger {
+  padding: var(--ng-gp-10);
+  display: flex;
+  align-items: center;
+  gap: var(--ng-gp-8);
+}
+
+.trigger_icon {
+  width: var(--ng-gp-12);
+  height: var(--ng-gp-12);
+
+  path {
+    fill: rgb(var(--ng-quaternary-text));
+  }
+}
+
+.entity_label {
+  display: block;
+  overflow: hidden;
+  max-width: 152px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

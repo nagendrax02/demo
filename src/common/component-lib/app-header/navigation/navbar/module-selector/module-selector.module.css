@@ -1,0 +1,48 @@
+.label {
+  color: rgba(var(--ng-neutral-80));
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: all 0.2s;
+}
+
+.icon {
+  fill: rgba(var(--ng-primary-30));
+  height: 24px !important;
+  width: 24px !important;
+  transition: all 0.2s;
+}
+
+.container {
+  outline: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: var(--ng-gp-4);
+  padding: var(--ng-gp-8);
+  border-radius: var(--ng-rd-8);
+  height: 32px;
+  min-width: 120px;
+  max-width: 200px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: rgba(var(--ng-neutral-30));
+  }
+
+  &.active {
+    background: rgba(var(--ng-primary-20));
+
+    & .label {
+      color: rgba(var(--ng-icon-white));
+    }
+
+    & .icon {
+      fill: rgba(var(--ng-neutral-white));
+    }
+  }
+}

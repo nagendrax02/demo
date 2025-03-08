@@ -1,0 +1,43 @@
+.empty_state_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.icon_wrapper {
+  width: 80px;
+  height: 80px;
+  color: rgb(var(--marvin-quaternary-text));
+}
+
+.icon {
+  font-size: 80px !important;
+
+  /* --marvin-quaternary-text */
+  filter: invert(68%) sepia(4%) saturate(974%) hue-rotate(169deg) brightness(91%) contrast(91%);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: rgb(var(--marvin-secondary-text));
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  color: rgb(var(--marvin-tertiary-text));
+  text-align: center;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+}

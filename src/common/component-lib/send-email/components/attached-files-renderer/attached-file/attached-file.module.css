@@ -1,0 +1,29 @@
+.wrapper {
+  width: 248px;
+  padding: 4px 8px;
+  border: 1px solid rgb(var(--marvin-border-1));
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.file_type_icon {
+  display: flex;
+  align-self: center;
+  margin-inline-end: 4px;
+}
+
+.preview_label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  color: rgb(var(--marvin-primary));
+  font-size: 14px;
+}
+
+.preview_modal {
+  z-index: 99999 !important;
+}

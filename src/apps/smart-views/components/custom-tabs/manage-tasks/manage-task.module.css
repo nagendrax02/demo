@@ -1,0 +1,26 @@
+.manage_task_container {
+  background: rgb(var(--ng-neutral-20));
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  padding-bottom: 0;
+  padding-inline-end: 0;
+  display: flex;
+  gap: var(--ng-gp-12);
+}
+
+.tab_container {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  padding: var(--ng-gp-16) var(--ng-gp-20);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--ng-gp-16);
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--ng-rd-12);
+  background: rgb(var(--ng-neutral-white));
+  border: 1px solid rgb(var(--ng-neutral-30));
+}

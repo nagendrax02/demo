@@ -1,0 +1,86 @@
+.associated_entity_name {
+  color: rgb(var(--ng-neutral-80));
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--ng-gp-4);
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  .opportunity_icon_container {
+    display: flex;
+    align-items: center;
+    gap: var(--ng-gp-4);
+
+    svg {
+      flex-shrink: 0;
+      height: 12px;
+      width: 12px;
+      fill: rgb(var(--ng-neutral-80));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .opportunity_name {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  & a {
+    border: 1px solid rgba(var(--ng-neutral-10));
+    border-radius: var(--ng-rd-4);
+  }
+
+  & a,
+  & div {
+    text-decoration: none;
+    color: inherit;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  & a:hover {
+    color: rgb(var(--ng-neutral-80));
+    border-color: rgba(var(--ng-neutral-30));
+  }
+
+  & a:visited {
+    border-color: rgba(var(--ng-neutral-40)) !important;
+  }
+}
+
+.visited_badge {
+  border-color: rgba(var(--ng-neutral-40)) !important;
+}
+
+.entity_name_container {
+  display: flex;
+  align-items: center;
+  gap: var(--ng-gp-8);
+  align-self: stretch;
+}
+
+.lead_identifier {
+  [class*='lead_identifier_icon'] {
+    display: block !important;
+    fill: rgba(var(--ng-neutral-80));
+    margin-top: 1px;
+  }
+}
+
+.hide_lead_name {
+  color: rgba(var(--ng-neutral-80));
+
+  [class*='lead-identifier-name'] {
+    display: none !important;
+  }
+}

@@ -1,0 +1,29 @@
+.action_menu {
+  z-index: 99999 !important;
+}
+
+.button {
+  background-color: inherit;
+  margin-inline-start: auto;
+  font-size: 24px;
+  max-height: 24px;
+  max-width: 24px;
+}
+
+.rename_action_modal {
+  max-width: 400px;
+  user-select: none;
+}
+
+.rename_action_input {
+  border: 1px solid rgb(var(--marvin-primary));
+  padding: 5px 12px;
+  border-radius: 2px;
+}
+
+.error_message {
+  margin-top: 4px;
+  color: rgb(var(--marvin-danger-1));
+  font-size: 12px;
+  line-height: 16px;
+}

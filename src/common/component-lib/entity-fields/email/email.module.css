@@ -1,0 +1,15 @@
+.email {
+  text-decoration: none;
+  color: rgb(var(--marvin-primary)) !important;
+  word-break: break-all;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
+.email:focus-visible {
+  outline: auto;
+}

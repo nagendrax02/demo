@@ -1,0 +1,138 @@
+.error_full_page {
+  height: 100vh;
+}
+
+.error_container {
+  [class*='content'] {
+    max-width: 100%;
+  }
+}
+
+.icon {
+  height: 280px;
+  width: 280px;
+}
+
+.link {
+  color: rgba(var(--ng-link-text));
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.team_notified_description {
+  margin-top: var(--ng-gp-24);
+}
+
+/* Unexpected Error */
+
+.unexpected_error_icon {
+  padding: var(--ng-gp-48) 0 36.772px;
+}
+
+.unexpected_error_description {
+  margin-block: var(--ng-gp-20) var(--ng-gp-40);
+}
+
+/* Connection Error */
+
+.connection_error_icon {
+  padding: 11.2px 0 10.036px;
+}
+
+.connection_error_description {
+  margin-block: var(--ng-gp-20) var(--ng-gp-40);
+}
+
+/* Access Denied Error */
+
+.access_denied_icon {
+  margin-top: 25px;
+  padding: 26px var(--ng-gp-20) 47.004px var(--ng-gp-20);
+}
+
+.access_denied_description {
+  margin-top: var(--ng-gp-20);
+}
+
+/* No Matching Results Error */
+
+.no_matching_results_icon {
+  margin-top: 15px;
+  padding: var(--ng-gp-16) 7.999px var(--ng-gp-14) var(--ng-gp-8);
+}
+
+.no_matching_results_description {
+  color: rgba(var(--ng-primary-text));
+  margin-block: var(--ng-gp-12) var(--ng-gp-24);
+}
+
+/* Empty Results Error */
+
+.empty_results_button_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-top: var(--ng-gp-24);
+}
+
+/* Cache Error */
+
+.cache_error_icon {
+  padding: 17px 0;
+}
+
+.cache_error_description_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ng-gp-20);
+  margin-block: var(--ng-gp-8) var(--ng-gp-40);
+}
+
+.refresh_button_icon {
+  margin-top: 1px;
+  height: 16.6px;
+  width: 16.6px;
+
+  & * {
+    fill: rgba(var(--ng-neutral-white));
+  }
+}
+
+.clear_filter_button_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+
+  & svg {
+    height: 10px;
+    width: 10px;
+
+    & * {
+      fill: rgba(var(--ng-error-60));
+    }
+  }
+}
+
+.add_lead_button_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+
+  & svg {
+    width: 12.917px;
+    height: 13.958px;
+
+    & * {
+      fill: rgba(var(--ng-neutral-white));
+    }
+  }
+}

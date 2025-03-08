@@ -1,0 +1,230 @@
+@keyframes field-fade-in {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+
+  to {
+    opacity: 1;
+    height: 32px;
+  }
+}
+
+.field_wrapper {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.field {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 32px !important;
+}
+
+.field_error {
+  color: rgb(var(--marvin-danger-1));
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.fade_in {
+  height: auto;
+  animation: 0.2s field-fade-in normal;
+}
+
+.fade_out {
+  height: auto;
+  animation: 0.2s field-fade-in reverse;
+}
+
+.field_name {
+  display: flex;
+  width: 110px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(var(--marvin-secondary-text));
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.mandatory::after {
+  content: ' *';
+  color: rgb(var(--marvin-danger-1));
+}
+
+.field_value {
+  width: 520px !important;
+  max-width: 520px !important;
+  box-sizing: border-box;
+  height: 32px !important;
+  user-select: none;
+}
+
+.icon_wrapper {
+  [class*='icon-wrapper'] {
+    color: var(--ng-neutral-60);
+  }
+
+  [class*='dropdown-icon'] {
+    color: unset;
+  }
+}
+
+.cc_bcc_toggle_wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  user-select: none;
+  margin-inline-start: 3px;
+}
+
+.cc_bcc_toggle {
+  color: rgb(var(--marvin-tertiary-text));
+  cursor: pointer;
+  text-align: start;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.cc_bcc_hide_button_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.cc_bcc_hide_button {
+  color: rgb(var(--marvin-tertiary-text));
+  cursor: pointer;
+  font-size: 24px;
+  max-height: 24px;
+  max-width: 24px;
+  user-select: none;
+}
+
+.subject_input {
+  border: 1px solid rgb(var(--marvin-border-1)) !important;
+  border-radius: 2px !important;
+}
+
+.input_error,
+.input_error > div {
+  border-color: rgb(var(--marvin-danger-1)) !important;
+}
+
+.dropdown_value {
+  & > div {
+    box-sizing: border-box;
+  }
+
+  & [class*='dropdown-content'] {
+    z-index: 5;
+  }
+
+  & [class*='option-wrapper'] {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  & [class*='option-label'] > div {
+    white-space: pre-wrap;
+  }
+}
+
+.option_input {
+  width: 520px !important;
+  box-sizing: border-box;
+  min-height: 32px !important;
+}
+
+.email_feild_selector_container {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(var(--marvin-divider-1));
+  margin-inline-start: 10px;
+  gap: 2px;
+  padding-inline: 5px;
+  user-select: none;
+}
+
+.email_feild_selector_count {
+  position: relative;
+  font-size: 11px;
+  margin-inline-start: 5px;
+  user-select: none;
+}
+
+.email_feild_selector_arrow,
+.template_selector_arrow {
+  position: relative;
+  font-size: 20px;
+  transform: rotate(0deg);
+  user-select: none;
+
+  &.open {
+    transform: rotate(180deg);
+  }
+
+  transition: transform 0.2s;
+}
+
+.template_selector_container {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  border: 1px solid rgb(var(--marvin-border-1));
+  padding: 5px 0 5px 4px;
+  gap: 4px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.template_selector_label {
+  position: relative;
+  font-size: 13px;
+  line-height: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(var(--marvin-secondary-text));
+  user-select: none;
+}
+
+.disable_box {
+  cursor: not-allowed;
+
+  [class*='grouped-input-wrapper'] {
+    background: rgb(var(--marvin-background-2)) !important;
+    pointer-events: none !important;
+  }
+
+  [class*='clear_icon'] {
+    display: none;
+  }
+
+  [class*='render_icon'] {
+    display: none;
+  }
+
+  [class*='option_label'] {
+    color: rgb(var(--marvin-secondary-text));
+  }
+}
+
+[class*='option_render'] {
+  background: rgb(var(--ng-neutral-20)) !important;
+}

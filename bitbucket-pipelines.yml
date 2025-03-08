@@ -1,0 +1,140 @@
+definitions:
+  caches:
+    pnpm: $BITBUCKET_CLONE_DIR/.pnpm-store
+  steps:
+    - step: &build-deploy
+        caches:
+          - pnpm
+        oidc: true
+        size: 2x
+        image: atlassian/default-image:4
+
+pipelines:
+  pull-requests:
+    '**':
+      - parallel:
+          steps:
+            - step:
+                <<: *build-deploy
+                name: Build Quality Test
+                script:
+                  - ./cicd/deploy.sh build_setup
+                  - ./cicd/build.sh build_quality_test
+            - step:
+                <<: *build-deploy
+                name: Unit Tests & SonarQube Scan
+                size: 4x
+                script:
+                  - ./cicd/deploy.sh build_setup
+                  - ./cicd/build.sh run_unit_test_sonarqube_scan
+
+  custom:
+    release:
+      - step:
+          <<: *build-deploy
+          name: Prod Build
+          deployment: Production
+          script:
+            - ./cicd/deploy.sh build_setup
+            - ./cicd/build.sh build --env prod
+          artifacts:
+            - build/**
+            - env-configs/**
+            - cicd/**
+
+      - parallel:
+          steps:
+            - step:
+                <<: *build-deploy
+                name: Stage Deploy - SGP
+                trigger: manual
+                script:
+                  - ./cicd/deploy.sh deploy --env stage --region sgp
+            - step:
+                <<: *build-deploy
+                trigger: manual
+                name: Stage Deploy - US
+                script:
+                  - ./cicd/deploy.sh deploy --env stage --region us
+            - step:
+                <<: *build-deploy
+                trigger: manual
+                name: Stage Deploy - MUM
+                script:
+                  - ./cicd/deploy.sh deploy --env stage --region mum
+
+      - parallel:
+          steps:
+            - step:
+                <<: *build-deploy
+                name: Prod Deploy - SGP
+                trigger: manual
+                script:
+                  - ./cicd/deploy.sh deploy --env prod --region sgp
+            - step:
+                <<: *build-deploy
+                trigger: manual
+                name: Prod Deploy - US
+                script:
+                  - ./cicd/deploy.sh deploy --env prod --region us
+            - step:
+                <<: *build-deploy
+                trigger: manual
+                name: Prod Deploy - MUM
+                script:
+                  - ./cicd/deploy.sh deploy --env prod --region mum
+            - step:
+                <<: *build-deploy
+                trigger: manual
+                name: Prod Deploy - CAN
+                script:
+                  - ./cicd/deploy.sh deploy --env prod --region ca
+            - step:
+                <<: *build-deploy
+                trigger: manual
+                name: Prod Deploy - IR
+                script:
+                  - ./cicd/deploy.sh deploy --env prod --region ir
+
+  branches:
+    develop:
+      - parallel:
+          steps:
+            - step:
+                <<: *build-deploy
+                deployment: Test
+                name: Build and Deploy - Integration
+                script:
+                  - ./cicd/deploy.sh build_setup
+                  - ./cicd/build.sh build --env integration
+                  - ./cicd/deploy.sh deploy --env integration --region sgp
+            - step:
+                <<: *build-deploy
+                name: Unit Tests & SonarQube Scan
+                script:
+                  - ./cicd/deploy.sh build_setup
+                  - ./cicd/build.sh run_unit_test_sonarqube_scan
+    feature/new-design-system:
+      - parallel:
+          steps:
+            - step:
+                <<: *build-deploy
+                deployment: Test
+                name: Build and Deploy - Integration Clone
+                script:
+                  - ./cicd/deploy.sh build_setup
+                  - ./cicd/build.sh build --env integration-clone
+                  - ./cicd/deploy.sh deploy --env integration-clone --region sgp
+            - step:
+                <<: *build-deploy
+                name: Unit Tests & SonarQube Scan
+                script:
+                  - ./cicd/deploy.sh build_setup
+                  - ./cicd/build.sh run_unit_test_sonarqube_scan
+    main:
+      - step:
+          <<: *build-deploy
+          name: Unit Tests & SonarQube Scan
+          script:
+            - ./cicd/deploy.sh build_setup
+            - ./cicd/build.sh run_unit_test_sonarqube_scan

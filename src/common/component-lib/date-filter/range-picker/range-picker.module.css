@@ -1,0 +1,54 @@
+.range_picker_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content !important;
+
+  @media screen and (width <= 480px) {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+.range_date_picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (width <= 480px) {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+.start_date_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: 2px;
+  margin-inline-start: 6px;
+  width: 135px;
+
+  @media screen and (width <= 480px) {
+    margin-inline: 0 7px;
+    width: 48%;
+  }
+}
+
+.end_date_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: 2px;
+  width: 135px;
+
+  @media screen and (width <= 480px) {
+    margin-inline: 7px 0;
+    width: 48%;
+  }
+}
+
+.date_time_width {
+  width: 270px;
+}

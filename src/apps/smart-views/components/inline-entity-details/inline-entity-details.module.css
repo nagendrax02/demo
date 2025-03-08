@@ -1,0 +1,59 @@
+.container {
+  background: rgb(var(--marvin-base));
+  width: calc(100% - 40px);
+  display: flex;
+  border-radius: 4px;
+  padding: 16px;
+  flex-direction: column;
+  margin: 8px;
+  gap: 16px;
+}
+
+.title {
+  color: rgb(var(--marvin-secondary-text));
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 590;
+  line-height: 24px;
+}
+
+.field_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 32px;
+}
+
+.field {
+  display: flex;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgb(var(--marvin-divider-1));
+  gap: 10%;
+}
+
+.field_name {
+  color: rgb(var(--marvin-tertiary-text));
+  min-width: 20%;
+  max-width: 20%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.field_value {
+  color: rgb(var(--marvin-primary-text));
+  display: -webkit-box;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  min-width: 25%;
+  max-width: 60%;
+
+  [class*='two-lines-ellipsis'] {
+    -webkit-line-clamp: 3 !important;
+  }
+}

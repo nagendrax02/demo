@@ -1,0 +1,32 @@
+.modal {
+  width: 500px !important;
+}
+
+.body {
+  [class*='dropdown_container'] {
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+.dropdown_placeholder {
+  [class*='input-placeholder'] {
+    color: rgb(var(--marvin-quaternary-text)) !important;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.set_default {
+  font-size: 13px;
+  font-weight: var(--marvin-fw-semibold);
+  line-height: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 2px;
+}

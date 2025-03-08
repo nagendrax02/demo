@@ -1,0 +1,27 @@
+.label {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 4px;
+  color: rgb(var(--marvin-secondary-text));
+  font-weight: var(--marvin-fw-semibold);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+
+.error {
+  color: rgb(var(--marvin-danger-1));
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 16px;
+  margin-bottom: 8px;
+  min-height: 16px;
+  margin-top: 4px;
+}
+
+.required {
+  color: rgb(var(--marvin-danger-1));
+  position: relative;
+  top: -1px;
+}

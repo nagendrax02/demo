@@ -1,0 +1,29 @@
+.content {
+  background-color: rgb(var(--marvin-base));
+}
+
+.show_btn {
+  opacity: 0;
+  padding-inline-end: 20px;
+}
+
+.row_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-inline: 50px;
+
+  &:hover {
+    background-color: rgb(var(--marvin-primary-light));
+
+    .show_btn {
+      opacity: 1;
+    }
+  }
+}
+
+.name {
+  flex: 1;
+  padding: 6px 20px;
+  font-size: 13px;
+}

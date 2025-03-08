@@ -1,0 +1,5 @@
+export const DEFAULT_OPTIONS_COUNT = 50;
+
+export const MAX_PRODUCT_OPTIONS_COUNT = 50000;
+
+export const MAX_USER_OPTIONS_COUNT = 1000000;

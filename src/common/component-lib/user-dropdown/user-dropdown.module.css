@@ -1,0 +1,23 @@
+.user_option_container {
+  line-height: normal;
+  user-select: none;
+  padding: 8px 0;
+}
+
+.user_label {
+  color: rgb(var(--marvin-secondary-text));
+  font-size: 13px;
+  font-weight: var(--marvin-fw-regular);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.user_text {
+  color: rgb(var(--marvin-quaternary-text));
+  font-size: 12px;
+  margin-top: 4px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

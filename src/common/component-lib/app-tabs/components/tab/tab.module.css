@@ -1,0 +1,98 @@
+.tab_wrapper {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 6px;
+  max-height: 35px;
+  gap: 4px;
+  cursor: pointer;
+
+  & .tab_icon,
+  .tab_icon > span,
+  .tab_icon > svg {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+  }
+
+  & .tab_title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: var(--marvin-fw-regular);
+    line-height: 20px;
+    white-space: nowrap;
+  }
+
+  & .tab_close {
+    margin-inline-start: auto;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  & .tab_close,
+  .tab_close > span {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+  }
+}
+
+.error_state {
+  border: none;
+  background-color: rgb(var(--marvin-red-100), 1);
+  color: rgb(var(--marvin-red-500));
+  fill: rgb(var(--marvin-red-500));
+
+  & .tab_close {
+    color: rgb(var(--marvin-secondary-text));
+  }
+
+  &.is_active_tab {
+    background-color: rgb(var(--marvin-red-300), 1);
+    color: rgb(var(--marvin-red-700));
+    fill: rgb(var(--marvin-red-700));
+  }
+}
+
+.secondary_tab {
+  border: none;
+  color: rgb(var(--marvin-secondary-text));
+  fill: rgb(var(--marvin-secondary-text));
+  background: none;
+
+  &.is_active_tab {
+    background-color: rgb(var(--marvin-primary-light), 1);
+    color: rgb(var(--marvin-blue-darker));
+    fill: rgb(var(--marvin-blue-darker));
+  }
+
+  &:hover {
+    background-color: rgb(var(--marvin-background-2), 1);
+    color: rgb(var(--marvin-secondary-text));
+    fill: rgb(var(--marvin-secondary-text));
+  }
+}
+
+.primary_tab {
+  color: rgb(var(--marvin-blue-900));
+  border: 1px solid rgb(var(--marvin-blue-300));
+  background: none;
+  justify-content: center;
+
+  & .tab_title {
+    font-weight: 510;
+  }
+
+  &.is_active_tab {
+    background-color: rgb(var(--marvin-blue-100), 1);
+    border: 0;
+  }
+
+  &:hover {
+    background-color: rgb(var(--marvin-background-2), 1);
+  }
+}

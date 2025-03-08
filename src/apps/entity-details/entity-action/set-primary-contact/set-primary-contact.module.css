@@ -1,0 +1,11 @@
+.spinner_style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom_body {
+  [class*='confirmation-body'] {
+    padding: 0 16px !important;
+  }
+}

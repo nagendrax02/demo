@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgb(var(--marvin-divider-1));
+  background: rgb(var(--marvin-base));
+  box-sizing: border-box;
+  gap: 12px;
+}

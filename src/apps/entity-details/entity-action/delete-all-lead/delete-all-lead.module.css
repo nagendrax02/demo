@@ -1,0 +1,56 @@
+.modal {
+  width: 500px !important;
+}
+
+.body {
+  min-height: 138px;
+  width: 100%;
+
+  [class*='success-wrapper'] {
+    line-height: 1.5 !important;
+  }
+}
+
+.body_header {
+  font-size: 14px;
+  color: rgb(var(--marvin-secondary-text));
+  display: flex;
+  align-items: center;
+}
+
+.body_container {
+  width: 100%;
+  color: rgb(var(--marvin-secondary-text));
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.body_content {
+  margin-bottom: 8px;
+}
+
+.bold_text {
+  font-weight: var(--marvin-fw-semibold);
+}
+
+.input_container {
+  margin: 20px 0;
+}
+
+.text_input {
+  height: 24px !important;
+  width: 184px !important;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  margin: 3px;
+}
+
+.asterisk {
+  color: rgb(var(--ng-error-60));
+}

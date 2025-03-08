@@ -1,0 +1,15 @@
+.delete_modal {
+  width: 400px;
+
+  [class*='modal-body'] {
+    overflow: auto;
+  }
+
+  [class*='modal-footer'] > button {
+    padding: 6px 12px;
+  }
+}
+
+.delete_button {
+  color: rgb(var(--marvin-danger-1));
+}

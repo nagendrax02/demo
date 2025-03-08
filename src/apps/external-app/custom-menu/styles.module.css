@@ -1,0 +1,9 @@
+.custom_menu_wrapper {
+  display: flex;
+  height: 100%;
+  background: rgb(var(--marvin-base));
+
+  [class*='left_panel_container'] {
+    min-height: 100vh;
+  }
+}

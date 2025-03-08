@@ -1,0 +1,6 @@
+.files_wrapper {
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  box-sizing: border-box;
+}

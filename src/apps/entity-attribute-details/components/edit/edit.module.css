@@ -1,0 +1,30 @@
+.edit {
+  height: 32px;
+
+  @media (width <= 1024px) {
+    height: 40px;
+  }
+
+  & > div {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    display: block;
+  }
+}
+
+.lead_details_edit_shimmer {
+  display: block;
+  height: 20px !important;
+  width: 88px !important;
+  border-radius: 2px !important;
+}
+
+.icon {
+  margin-bottom: 2px;
+}
+
+.size_with_right_icon {
+  padding: 6px 12px 6px 16px;
+}

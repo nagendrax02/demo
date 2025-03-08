@@ -1,0 +1,18 @@
+.table_header_row {
+  background: rgb(var(--marvin-background-2));
+  border: 0.5px solid rgb(var(--marvin-divider-1));
+  color: rgb(var(--marvin-secondary-text));
+  font-size: 14px;
+  font-weight: var(--marvin-fw-semibold);
+}
+
+.table_header_column {
+  border: 0.5px solid rgb(var(--marvin-divider-1));
+  background: rgb(var(--marvin-background-2));
+
+  &:nth-child(1) {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+  }
+}

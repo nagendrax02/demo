@@ -1,0 +1,18 @@
+.timeline_icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: rgb(var(--marvin-base));
+  background: rgb(var(--marvin-quaternary-text));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-size: 20px;
+  }
+
+  @media (width <= 768px) {
+    margin-inline-start: 16px;
+  }
+}

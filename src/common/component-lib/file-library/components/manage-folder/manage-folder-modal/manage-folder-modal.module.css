@@ -1,0 +1,26 @@
+.modal {
+  width: 432px !important;
+
+  & * {
+    box-sizing: border-box;
+  }
+}
+
+.container {
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  color: rgb(var(--marvin-secondary-text));
+}
+
+.option_wrapper {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

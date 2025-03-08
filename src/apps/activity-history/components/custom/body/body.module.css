@@ -1,0 +1,12 @@
+.link {
+  color: rgb(var(--marvin-primary));
+  cursor: pointer;
+}
+
+.cancelled_sales_activity {
+  [class*='accordion-name-container'] {
+    & > div {
+      color: rgb(var(--marvin-danger-1)) !important;
+    }
+  }
+}

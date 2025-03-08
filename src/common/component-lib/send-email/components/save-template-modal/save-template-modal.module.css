@@ -1,0 +1,42 @@
+.modal {
+  width: 400px !important;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input_label {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 600;
+  color: rgb(var(--marvin-secondary-text));
+}
+
+.input {
+  border: 1px solid rgb(var(--marvin-border-1));
+  border-radius: 2px;
+  width: 100%;
+
+  & > div {
+    padding: 5px 12px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.error {
+  color: rgb(var(--marvin-danger-1));
+  font-size: 12px;
+  line-height: 16px;
+}

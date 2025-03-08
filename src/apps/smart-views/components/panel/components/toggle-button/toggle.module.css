@@ -1,0 +1,23 @@
+.toggle_container {
+  position: fixed;
+  background-color: rgb(var(--marvin-base));
+  color: rgb(var(--marvin-primary));
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 32px;
+  transform: translateX(240px) rotate(180deg);
+  box-shadow: 0px -1px 1px rgba(var(--marvin-primary-text), 0.25);
+  cursor: pointer;
+  transition: transform 0.4s ease 0s;
+  z-index: 1;
+
+  & span {
+    font-size: 20px;
+  }
+}
+
+.toggle_container_close {
+  transform: unset;
+  box-shadow: 0px 1px 1px rgba(var(--marvin-primary-text), 0.25);
+}

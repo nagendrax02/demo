@@ -1,0 +1,54 @@
+.modal {
+  width: 600px !important;
+  position: inherit;
+  right: 65px;
+}
+
+.header {
+  [class*='title-wrapper'] {
+    width: 100% !important;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.body_description {
+  margin-top: 4px;
+  color: rgb(var(--marvin-quaternary-text));
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.input_label {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 600;
+  color: rgb(var(--marvin-secondary-text));
+}
+
+.mandatory_asterisk {
+  color: rgb(var(--ng-red-50));
+}
+
+.footer {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.error {
+  color: rgb(var(--marvin-danger-1));
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.send_test_email_btn_icon {
+  font-size: 20px;
+}

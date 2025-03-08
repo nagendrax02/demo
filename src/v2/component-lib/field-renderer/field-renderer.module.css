@@ -1,0 +1,13 @@
+.shimmer_value {
+  width: 55%;
+  height: 20px;
+}
+
+.field_renderer_container {
+  color: rgb(var(--ng-neutral-70));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: left;
+}

@@ -1,0 +1,31 @@
+.marvin_icon_button {
+  letter-spacing: 0;
+  outline: none;
+  border: none;
+  background-color: rgb(var(--marvin-background-2));
+  border-radius: 2px;
+  padding: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.marvin_icon_button:hover {
+  background-color: rgba(var(--marvin-secondary-text), 0.1);
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.spinner,
+.spinner > div {
+  height: 16px;
+  width: 16px;
+}

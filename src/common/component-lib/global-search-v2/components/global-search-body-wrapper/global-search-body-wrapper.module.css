@@ -1,0 +1,17 @@
+.results_wrapper {
+  background-color: rgb(var(--marvin-base));
+  border-radius: var(--ng-rd-12);
+  position: relative;
+  padding: var(--ng-gp-14);
+  height: 624px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  top: var(--ng-gp-4);
+}
+
+@media (max-height: 699px) {
+  .results_wrapper {
+    height: 480px;
+  }
+}

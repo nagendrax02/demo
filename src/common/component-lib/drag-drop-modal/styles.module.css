@@ -1,0 +1,11 @@
+.modal_content {
+  background: rgba(var(--marvin-base));
+  border-radius: 2px;
+  box-shadow: 0 1px 6px 0 rgba(var(--marvin-secondary-text));
+  padding: 20px;
+  cursor: move !important;
+  min-width: 250px;
+  position: absolute;
+  z-index: var(--drag-drop-modal-z-index);
+  gap: 12px;
+}

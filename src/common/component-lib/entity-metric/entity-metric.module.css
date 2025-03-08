@@ -1,0 +1,4 @@
+.entity_metric {
+  display: flex;
+  background: rgb(var(--marvin-base));
+}

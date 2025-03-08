@@ -1,0 +1,1 @@
+export { getAccountActivityMetaData } from './metadata';

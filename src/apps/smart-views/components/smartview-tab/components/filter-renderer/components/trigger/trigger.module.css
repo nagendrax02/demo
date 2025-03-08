@@ -1,0 +1,65 @@
+button.trigger_active {
+  border: 1px solid rgba(var(--ng-primary-20));
+  background: rgba(var(--ng-neutral-0));
+
+  [class*='sub-label'] {
+    background: rgba(var(--ng-primary-0));
+  }
+}
+
+button.trigger_disable {
+  pointer-events: none;
+  border: 1px solid rgba(var(--ng-neutral-30));
+  background-color: rgba(var(--ng-neutral-0));
+  color: rgba(var(--ng-neutral-50));
+
+  [class*='sub-label'] div {
+    color: rgba(var(--ng-neutral-50)) !important;
+  }
+
+  [class*='icon-wrapper'] {
+    pointer-events: none;
+    color: rgba(var(--ng-neutral-50)) !important;
+  }
+}
+
+button.trigger_inactive {
+  &:hover {
+    background: rgba(var(--ng-neutral-10));
+
+    /* Button Shadow new */
+    box-shadow: 0 1px 2px 0 rgba(var(--ng-shadow-black-5));
+
+    [class*='sub-label'] {
+      background: rgba(var(--ng-neutral-30));
+    }
+  }
+}
+
+.trigger_card_text {
+  flex: 1 0 0;
+  overflow: hidden;
+  color: rgba(var(--ng-neutral-90));
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.arrow_icon {
+  font-size: 16px;
+  color: rgba(var(--ng-neutral-60));
+  pointer-events: all;
+}
+
+.arrow_icon_active {
+  rotate: 180deg;
+}
+
+.arrow_icon_disable {
+  pointer-events: none;
+  fill: rgba(var(--ng-neutral-50)) !important;
+
+  & path {
+    fill: rgba(var(--ng-neutral-50)) !important;
+  }
+}

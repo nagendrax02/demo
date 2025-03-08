@@ -1,0 +1,26 @@
+.metadata_info {
+  font-size: 12px;
+
+  [class*='user-name'] {
+    display: inline;
+    font-size: 12px;
+    color: rgb(var(--marvin-secondary-text));
+    padding-inline-end: 4px;
+  }
+}
+
+.by_label {
+  color: rgb(var(--marvin-quaternary-text));
+  padding-inline-end: 4px;
+}
+
+.on_label {
+  color: rgb(var(--marvin-quaternary-text));
+  padding-inline-end: 4px;
+}
+
+.tracklocation_wrapper {
+  position: relative;
+  top: 4px;
+  right: 4px;
+}

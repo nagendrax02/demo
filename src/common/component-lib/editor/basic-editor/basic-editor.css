@@ -1,0 +1,115 @@
+/* stylelint-disable selector-class-pattern */
+
+.container {
+  .fr-toolbar,
+  .fr-second-toolbar {
+    /* Size and Shape */
+    border-radius: 0;
+  }
+
+  .fr-box.fr-basic .fr-element {
+    color: rgb(var(--marvin-secondary-text));
+  }
+
+  .fr-wrapper {
+    border-bottom: 0 !important;
+    background: rgb(var(--marvin-base)) !important;
+  }
+
+  .fr-box.fr-basic .fr-wrapper {
+    border: 1px solid rgb(var(--marvin-border-1));
+  }
+
+  .fr-toolbar {
+    /* Size and Shape */
+    height: 34px;
+    border: 1px solid rgb(var(--marvin-border-1));
+    background: rgb(var(--marvin-base)) !important;
+
+    /* Behavior */
+    overflow: hidden;
+  }
+
+  .fr-toolbar .fr-btn-grp {
+    /* Size and Shape */
+    border-inline-end: 1px solid rgb(var(--marvin-border-1));
+    padding: 0 2px;
+    margin: 0;
+  }
+
+  .fr-toolbar .fr-dropdown {
+    /* Behavior */
+    display: none;
+  }
+
+  .fr-toolbar .fr-btn {
+    /* Size and Shape */
+    height: 24px !important;
+    width: 24px !important;
+
+    /* Behavior */
+    position: relative;
+  }
+
+  .fr-toolbar svg {
+    /* Size and Shape */
+    height: 16px !important;
+    width: 16px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-inline: 4px !important;
+  }
+
+  .fr-toolbar svg path {
+    /* Color */
+    fill: rgb(var(--marvin-quaternary-text)) !important;
+  }
+
+  .fr-toolbar button.fr-btn.fr-active {
+    background-color: rgb(var(--marvin-divider-1)) !important;
+  }
+
+  .fr-element p {
+    /* Size and Shape */
+    height: 100% !important;
+    min-height: 60px;
+    margin: 0 !important;
+
+    /* Font */
+    font-family: Arial, sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.6;
+    text-align: left;
+
+    /* Color */
+    color: rgb(var(--marvin-secondary-text)) !important;
+
+    /* Behavior */
+    box-sizing: border-box;
+    overflow-x: auto;
+  }
+
+  .fr-second-toolbar {
+    height: 28px !important;
+    border: 1px solid rgb(var(--marvin-border-1)) !important;
+    background: rgb(var(--marvin-base)) !important;
+  }
+
+  .fr-second-toolbar > span {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+}
+
+.fr-tooltip {
+  /* Size and Shape */
+  padding: 4px 8px !important;
+  border-radius: 1px !important;
+
+  /* Font */
+  font-size: 13px !important;
+
+  /* Color */
+  background-color: rgb(var(--marvin-secondary-text)) !important;
+  color: rgb(var(--marvin-background-2)) !important;
+}

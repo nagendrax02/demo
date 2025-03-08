@@ -1,0 +1,40 @@
+.entity_more_actions {
+  display: flex;
+  max-height: 32px;
+  width: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.quick_action {
+  &,
+  path {
+    fill: rgb(var(--marvin-base)) !important;
+  }
+}
+
+.secondary_action {
+  &,
+  path {
+    fill: rgb(var(--ng-secondary-content-icon)) !important;
+  }
+}
+
+.action_icon {
+  font-size: 16px;
+  height: 16px;
+  width: 16px !important;
+}
+
+.more_action {
+  font-size: 16px;
+  height: 16px;
+  width: 16px;
+  fill: rgb(var(--ng-secondary-content-icon)) !important;
+}
+
+.toggle_type {
+  font-size: var(--ng-h-5-fs);
+  height: var(--ng-h-5-fs);
+  width: var(--ng-h-5-fs);
+}

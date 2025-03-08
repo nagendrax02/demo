@@ -1,0 +1,92 @@
+.search_input_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: var(--ng-rd-8);
+  background-color: rgb(var(--ng-neutral-10));
+
+  [class*='input-element'] {
+    height: 35px;
+    background-color: rgb(var(--ng-neutral-10));
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+
+    &:hover {
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    &:focus {
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    &:active {
+      border: none !important;
+      outline: none !important;
+    }
+  }
+
+  &:hover {
+    border: none !important;
+  }
+
+  &:focus {
+    border: none !important;
+  }
+
+  &:active {
+    border: none !important;
+  }
+}
+
+.search_box {
+  &:hover {
+    border: none !important;
+  }
+
+  &:focus {
+    border: none !important;
+  }
+
+  &:active {
+    border: none !important;
+  }
+}
+
+.search_icon {
+  font-size: var(--ng-sh-fs);
+  width: var(--ng-gp-12);
+  height: var(--ng-gp-12);
+  margin-inline-start: var(--ng-gp-10);
+
+  path {
+    fill: rgb(var(--ng-quaternary-text)) !important;
+  }
+}
+
+.search_input_clear_button {
+  border: none !important;
+  background: inherit !important;
+  border-radius: var(--ng-rd-8) !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+}
+
+.search_input_clear_button:hover {
+  border: none;
+  box-shadow: none !important;
+}
+
+.search_input_clear_button:focus {
+  border: none;
+  box-shadow: none !important;
+}
+
+.search_input_clear_button:active {
+  border: none;
+}

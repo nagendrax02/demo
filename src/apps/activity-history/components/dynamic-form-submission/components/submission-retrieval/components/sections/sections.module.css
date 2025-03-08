@@ -1,0 +1,27 @@
+.sections {
+  padding-bottom: 24px;
+
+  [class*='accordion-header'] {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    background-color: rgb(var(--marvin-background-2)) !important;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 5px 8px !important;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  [class*='accordion-name-container'] {
+    & > div {
+      color: rgb(var(--marvin-secondary-text)) !important;
+    }
+  }
+
+  [class*='icon-wrapper'] {
+    font-size: 20px;
+    color: rgb(var(--marvin-secondary-text));
+  }
+}

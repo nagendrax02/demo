@@ -1,0 +1,38 @@
+.modal_container {
+  width: 800px !important;
+}
+
+.modal_body_container {
+  height: 400px !important;
+  width: 800px !important;
+}
+
+.custom_icon_style {
+  font-size: 16px !important;
+  margin-inline-end: 3px !important;
+}
+
+.grid_container {
+  margin-top: 16px;
+  height: 360px !important;
+  overflow: scroll;
+
+  [class*='table-header'] {
+    position: relative !important;
+  }
+}
+
+.cancel_button {
+  cursor: pointer;
+  justify-content: center;
+}
+
+.assign_leads_body_wrapper {
+  [class*='header-action'] {
+    min-width: 100% !important;
+  }
+
+  [class*='dropdown-content'] {
+    min-width: 100% !important;
+  }
+}

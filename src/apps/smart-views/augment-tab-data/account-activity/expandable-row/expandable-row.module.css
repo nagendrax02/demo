@@ -1,0 +1,25 @@
+.profile_image {
+  font-size: 13px;
+  width: 32px;
+  height: 32px;
+
+  [class*='icon-wrapper'] {
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+  }
+}
+
+.title {
+  font-size: 14px;
+  margin-inline-end: 12px;
+}
+
+.badge {
+  padding: 2px 8px;
+  height: 26px;
+}
+
+.secondary_data {
+  font-size: 14px;
+}

@@ -1,0 +1,46 @@
+.marker {
+  background: rgb(var(--marvin-secondary-text));
+  margin-inline-end: 6px;
+  border-radius: 50%;
+  margin-top: 10px;
+  height: 3px !important;
+  width: 3px !important;
+  display: inline-block;
+}
+
+.identifier {
+  color: rgb(var(--marvin-secondary-text));
+  font-size: 13px;
+  line-height: 20px;
+  max-width: 340px;
+  word-break: break-word;
+  font-weight: var(--marvin-fw-regular);
+}
+
+.name_container {
+  display: flex;
+}
+
+.model_container {
+  width: 400px !important;
+
+  [class*='modal-body'] {
+    padding: 0 var(--ng-gp-16) !important;
+  }
+}
+
+.heading {
+  color: rgb(var(--marvin-tertiary-text));
+  font-size: 13px;
+  line-height: 20px;
+  overflow-wrap: break-word;
+}
+
+.body {
+  margin-block: 4px;
+  margin-inline: 6px 0;
+}
+
+.description {
+  margin-block: 4px;
+}

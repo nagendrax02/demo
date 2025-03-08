@@ -1,0 +1,8 @@
+.user_name {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(var(--marvin-primary-text));
+  word-break: break-all;
+  overflow: hidden;
+}

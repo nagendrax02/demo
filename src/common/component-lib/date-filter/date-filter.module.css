@@ -1,0 +1,44 @@
+.date_filter_wrapper {
+  display: flex;
+  font-size: 13px;
+  z-index: var(--marvin-base-z-index);
+
+  & > div {
+    width: 128px;
+  }
+
+  [class*='dropdown-content'] {
+    & > div {
+      margin: 4px 0;
+    }
+  }
+
+  [class*='option-wrapper'] {
+    margin-top: 0;
+
+    & > div {
+      line-height: 20px;
+    }
+  }
+
+  [class*='option-label'] {
+    width: 100%;
+    margin: 0;
+    padding: 6px 12px;
+    padding-inline-start: 4px;
+    justify-content: space-between;
+  }
+
+  @media screen and (width <= 480px) {
+    width: 100%;
+    flex-direction: column;
+
+    [class*='dropdown-content'] {
+      z-index: var(--marvin-vcard-z-index);
+    }
+
+    & > div {
+      width: 100%;
+    }
+  }
+}

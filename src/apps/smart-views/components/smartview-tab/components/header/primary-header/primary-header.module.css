@@ -1,0 +1,43 @@
+.primary_header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(var(--marvin-base));
+}
+
+.header_title {
+  color: rgb(var(--marvin-primary-text));
+  font-weight: var(--marvin-fw-semibold);
+  margin: 0;
+  word-break: break-word;
+  display: flex;
+  align-items: center;
+  gap: var(--ng-gp-8);
+}
+
+.primary_header_mip {
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header_icon {
+  height: 24px !important;
+  width: 24px !important;
+}
+
+.activity_type_icon {
+  fill: rgb(var(--ng-primary-30)) !important;
+  position: relative;
+  top: 2px;
+  height: 20px !important;
+  width: 20px !important;
+}
+
+.title {
+  margin-inline-end: var(--ng-gp-8);
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

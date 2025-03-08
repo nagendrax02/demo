@@ -1,0 +1,9 @@
+.task_delete_secondary_button {
+  color: rgb(var(--marvin-danger-1));
+}
+
+.task_delete_primary_button {
+  [class*=' button_text'] {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+.ellipsis {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.two_line_ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: initial;
+  word-break: break-all;
+}
+
+.hyper_link {
+  display: block;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+  color: rgb(var(--ng-neutral-70));
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(var(--ng-neutral-80));
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: rgb(var(--ng-ink-blue-50));
+  }
+
+  &:focus-visible {
+    outline: auto;
+  }
+}
+
+.disabled_text {
+  color: rgb(var(--ng-disabled-text));
+  cursor: default;
+}
+
+.button {
+  all: inherit;
+  border: none;
+}

@@ -1,0 +1,43 @@
+.email_header {
+  margin-bottom: 20px;
+  color: rgb(var(--marvin-primary-text));
+}
+
+.email_info {
+  display: flex;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.label {
+  display: flex;
+  color: rgb(var(--marvin-tertiary-text));
+  width: 96px;
+  flex-shrink: 0;
+}
+
+.value {
+  display: flex;
+}
+
+.title {
+  padding-inline-end: 4px;
+}
+
+.subtitle {
+  color: rgb(var(--marvin-tertiary-text)) !important;
+}
+
+.cc_bcc_fields {
+  margin-bottom: 8px;
+}
+
+.view {
+  cursor: pointer;
+  margin-block: 3px 0;
+  margin-inline: 5px 0;
+  color: rgb(var(--marvin-primary)) !important;
+}

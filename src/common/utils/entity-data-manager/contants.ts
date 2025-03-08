@@ -1,0 +1,3 @@
+export const DEFAULT_COUNT = 50;
+export const MAX_PRODUCT_OPTIONS_COUNT = 50000;
+export const MXDATASEPERATOR = 'MXDATASEPERATOR';

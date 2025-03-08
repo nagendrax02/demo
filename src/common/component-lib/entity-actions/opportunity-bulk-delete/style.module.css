@@ -1,0 +1,40 @@
+.custom_body {
+  [class*='confirmation-body'] {
+    padding: 0 16px !important;
+  }
+}
+
+.delete_button {
+  color: rgb(var(--marvin-danger-1));
+}
+
+.partial_success_message_wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  min-height: 148px;
+}
+
+.partial_success_count {
+  font-weight: var(--marvin-fw-semibold);
+}
+
+.partial_success {
+  color: rgb(var(--marvin-success-1));
+}
+
+.partial_failure {
+  color: rgb(var(--marvin-danger-1));
+}
+
+.delete_all {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  margin: 24px 0 12px;
+}

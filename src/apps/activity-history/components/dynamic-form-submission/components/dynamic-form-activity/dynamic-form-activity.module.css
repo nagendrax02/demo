@@ -1,0 +1,19 @@
+.dynamic_form_activity {
+  margin-inline-end: 8px;
+  display: flex;
+  gap: 2px;
+}
+
+.view_details {
+  color: rgb(var(--marvin-primary));
+  font-size: 13px;
+  cursor: pointer;
+  width: fit-content;
+  padding-top: 4px;
+}
+
+.title {
+  [class*='user-name'] {
+    display: contents;
+  }
+}

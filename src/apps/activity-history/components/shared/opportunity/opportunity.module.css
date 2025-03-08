@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 4px;
+
+  [class*='opportunity-icon'] {
+    fill: rgb(var(--marvin-primary)) !important;
+    height: 16px !important;
+    width: 16px !important;
+    margin-top: 1px;
+  }
+
+  @media (width <= 768px) {
+    [class*='opportunity-icon'] {
+      margin-top: 3px;
+    }
+  }
+}
+
+.activity_name {
+  color: rgb(var(--marvin-primary)) !important;
+  margin-inline-start: 4px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

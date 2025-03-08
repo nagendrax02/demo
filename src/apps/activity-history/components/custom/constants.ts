@@ -1,0 +1,15 @@
+export const CANCELLED_ACTIVITY = 'MXVAR[{CancelledActivity}]';
+export const NOTES_MESSAGE = 'Notes{=}Message{=}';
+export const NOTES_MESSAGE_REPLACED = 'Notes{=}{next}Message{=}';
+export const WEB_WIDGET_NAME = 'WebWidgetName';
+export const PAGE_TITLE = 'PageTitle';
+export const PAGE_URL = 'PageURL';
+export const MESSAGE = 'Message';
+export const TOPBAR = 'Topbar';
+export const CATEGORY = 'Category';
+export const WEBWIDGETNAME = 'WebWidgetName{=}';
+export const WEB_EVENT = 'WebEvent';
+export const CANCELLED_BY = 'Cancelled by';
+export const MODIFIED_BY = 'Modified by';
+export const DELETED_BY = 'Deleted by';
+export const ADDED_BY = 'Added by';

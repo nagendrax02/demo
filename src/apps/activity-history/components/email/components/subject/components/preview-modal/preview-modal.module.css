@@ -1,0 +1,17 @@
+.modal {
+  width: 650px !important;
+}
+
+.modal_body {
+  overflow-x: hidden;
+  height: 50vh !important;
+  padding: 0 !important;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  box-sizing: border-box;
+}

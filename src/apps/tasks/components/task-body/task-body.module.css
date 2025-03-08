@@ -1,0 +1,84 @@
+.tasks_body {
+  font-size: 13px;
+  color: rgb(var(--marvin-secondary-text));
+  padding-inline-start: 24px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.task_color_map {
+  min-width: 4px;
+  max-width: 4px;
+  margin-inline-end: 8px;
+  height: 24px;
+}
+
+.task_color_map_with_opp {
+  min-width: 4px;
+  max-width: 4px;
+  margin-inline-end: 8px;
+  height: 32px;
+}
+
+.tasks_body_header {
+  display: flex;
+  align-items: center;
+}
+
+.tasks_complete_title {
+  text-decoration: line-through;
+}
+
+.tasks_title {
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks_title_main {
+  display: flex;
+}
+
+.overdue_circle {
+  background-color: rgb(var(--marvin-danger-1));
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin-inline-end: 5px;
+}
+
+.overdue {
+  display: flex;
+  font-size: 12px;
+  color: rgb(var(--marvin-danger-1));
+  margin-inline-start: 16px;
+  align-items: center;
+}
+
+.description {
+  font-size: 11px;
+  margin-top: 8px;
+}
+
+.opp_title {
+  color: rgb(var(--marvin-primary));
+  text-decoration: none;
+  font-size: 11px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  [class*='opportunity-icon'] {
+    fill: rgb(var(--marvin-primary)) !important;
+    width: 11px !important;
+    height: 11px !important;
+    margin: 1px 3px 0 0;
+  }
+}

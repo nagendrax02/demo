@@ -1,0 +1,10 @@
+.activity_score {
+  font-size: 16px;
+  word-break: keep-all;
+  min-width: fit-content;
+  color: rgb(var(--marvin-danger-1));
+
+  &.positive_score {
+    color: rgb(var(--marvin-green-500));
+  }
+}

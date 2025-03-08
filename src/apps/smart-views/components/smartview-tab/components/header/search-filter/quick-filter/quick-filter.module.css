@@ -1,0 +1,76 @@
+.button_container {
+  display: flex;
+  max-height: 28px;
+  padding: var(--ng-gp-4) var(--ng-gp-8);
+  justify-content: center;
+  align-items: center;
+  color: rgba(var(--ng-neutral-80));
+  border-radius: var(--ng-rd-6);
+  border: 1px solid rgba(var(--ng-neutral-30));
+
+  [class*='button_text'] {
+    display: block;
+  }
+}
+
+.button_inactive {
+  background: rgba(var(--ng-neutral-0));
+
+  &:hover {
+    background: rgba(var(--ng-neutral-10));
+  }
+}
+
+.button_active {
+  background: rgba(var(--ng-neutral-20));
+
+  &:hover {
+    background: rgba(var(--ng-neutral-20));
+  }
+}
+
+.button_selected {
+  background: rgba(var(--ng-green-0));
+  border: 1px solid rgba(var(--ng-green-10));
+  color: rgba(var(--ng-green-70));
+
+  &:hover {
+    background: rgba(var(--ng-green-0));
+    border: 1px solid rgba(var(--ng-green-10));
+  }
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.arrow_up {
+  transform: rotate(180deg);
+}
+
+.edit_delete_icon {
+  & svg,
+  svg path {
+    fill: rgba(var(--ng-neutral-60));
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.field_name {
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.delete_text {
+  color: rgb(var(--marvin-danger-1));
+}
+
+.quick_filter_seperator {
+  height: 28px;
+  width: 1px;
+  background-color: rgba(var(--ng-neutral-30));
+}

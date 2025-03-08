@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 4px;
+  padding-top: 4px;
+}
+
+.icon {
+  fill: rgb(var(--marvin-primary)) !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.text {
+  color: rgb(var(--marvin-primary));
+  margin-inline-start: 4px;
+  cursor: pointer;
+}

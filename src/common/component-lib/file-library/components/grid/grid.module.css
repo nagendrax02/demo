@@ -1,0 +1,11 @@
+.grid {
+  overflow-y: auto;
+}
+
+.cards_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px;
+  margin-inline-end: 0;
+}

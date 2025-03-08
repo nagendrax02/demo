@@ -1,0 +1,66 @@
+:root {
+  /* Web Styles (screen size > 768px) */
+
+  /* VCard */
+  --vcard-height: 96px;
+
+  /* VCard Icon */
+  --vcard-icon-size: 64px;
+  --vcard-icon-font-size: 24px;
+  --vcard-icon-line-height: 32px;
+  --vcard-icon-font-weight: 400;
+
+  /* VCard Title */
+  --vcard-title-font-size: 20px;
+  --vcard-title-line-height: 28px;
+  --vcard-title-font-weight: 700;
+  --vcard-title-white-space: nowrap;
+  --vcard-title-line-clamp: 1;
+
+  /* VCard Badge */
+  --vcard-badge-font-size: 13px;
+  --vcard-badge-line-height: 20px;
+  --vcard-badge-font-weight: 590;
+
+  /* Vcard Quick Action */
+  --vcard-quick-action-icon-size: 16px;
+
+  /* VCard Action */
+  --vcard-action-icon-size: 20px;
+  --vcard-action-font-size: 13px;
+  --vcard-action-line-height: 20px;
+  --vcard-action-font-weight: 590;
+  --vcard-action-gap: 12px;
+  --vcard-action-padding: 6px 16px 6px 12px;
+
+  /* VCard MetaData */
+  --vcard-metadata-font-size: 13px;
+  --vcard-metadata-line-height: 20px;
+  --vcard-metadata-font-weight: 400;
+  --vcard-metadata-seperator-size: 4px;
+}
+
+@media (width < 768px) {
+  :root {
+    /* Mobile Styles (screen size < 768px) */
+
+    /* VCard Icon */
+    --vcard-icon-size: 40px;
+    --vcard-icon-font-size: 16px;
+    --vcard-icon-line-height: 24px;
+
+    /* VCard Title */
+    --vcard-title-white-space: nowrap;
+    --vcard-title-line-clamp: 2;
+
+    /* VCard MetaData */
+    --vcard-metadata-font-size: 15px;
+    --vcard-metadata-line-height: 22px;
+    --vcard-metadata-font-weight: 400;
+
+    /* VCard Action */
+    --vcard-action-icon-size: 24px;
+    --vcard-action-gap: auto;
+    --vcard-action-padding: 8px;
+  }
+}

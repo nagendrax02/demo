@@ -1,0 +1,130 @@
+.search_wrapper {
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  background: rgba(var(--ng-ash-90), 0.5);
+  display: flex;
+  place-content: center center;
+  z-index: var(--global-search-z-index);
+}
+
+.search_container {
+  background: none !important;
+  border: none !important;
+  margin-top: var(--ng-gp-24);
+  max-width: 900px;
+  width: 96%;
+  position: relative;
+  height: fit-content;
+  color: rgb(var(--ng-ash-90), 0.9);
+
+  [class*='input-element'] {
+    height: var(--ng-d-0-fs);
+    padding: 10px 16px;
+    width: 100%;
+    border-radius: var(--ng-rd-4);
+    font-size: var(--ng-h-5-fs);
+    color: rgb(var(--ng-ash-90));
+
+    &:hover {
+      border: 1px solid rgb(var(--ng-border));
+      box-shadow: 0 0 0 2px rgba(var(--ng-border), 0.25);
+    }
+  }
+
+  .close_icon {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: rgb(var(--ng-tertiary-text), 0.75);
+    cursor: pointer;
+  }
+}
+
+.no_records {
+  text-align: center;
+  padding: var(--ng-lb-1-fs);
+  font-size: var(--ng-h-5-fs);
+  color: rgb(var(--ng-ash-90));
+}
+
+.search_filters_wrapper {
+  display: flex;
+  gap: var(--ng-gp-8);
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: var(--ng-btn-2-fs);
+  padding: var(--ng-gp-8);
+
+  [class*='icon-wrapper'] {
+    font-size: var(--ng-h-3-fs);
+    color: rgb(var(--ng-quaternary-text));
+    cursor: pointer;
+  }
+}
+
+.search_results {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.search_results_body {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: var(--ng-sh-fs);
+  padding-right: var(--ng-gp-12);
+}
+
+.results_wrapper_footer {
+  flex-shrink: 0;
+  height: 40px;
+  border-top: 1px solid rgba(var(--ng-grey-80));
+}
+
+.body {
+  display: flex;
+  height: 95%;
+  padding-bottom: var(--ng-gp-12);
+}
+
+.quick_view_wrapper {
+  width: 312px;
+  height: 100%;
+  position: relative;
+  background-color: rgb(var(--ng-neutral-10));
+  border-radius: var(--ng-rd-12);
+}
+
+.no_results_found_icon {
+  width: 144px;
+  height: 137px;
+}
+
+.ticket_icon {
+  width: 20px !important;
+  height: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lead_card_lead_icon {
+  width: 20px;
+  height: 20px;
+
+  path {
+    fill: rgb(var(--ng-primary-30));
+  }
+}
+
+.ticket_lead_icon {
+  width: 14px !important;
+  height: 15px !important;
+
+  path {
+    fill: rgb(var(--ng-neutral-60));
+  }
+}

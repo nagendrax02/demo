@@ -1,0 +1,19 @@
+.coming_soon_text {
+  padding-top: 33px;
+  font-size: 32px;
+  line-height: 38px;
+  color: rgb(var(--marvin-quaternary-text));
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.image {
+  height: 153;
+  width: 288;
+}

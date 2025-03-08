@@ -1,0 +1,19 @@
+.styled_phone {
+  text-decoration: none;
+  color: rgb(var(--marvin-secondary-text));
+}
+
+.is_link {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(var(--marvin-primary)) !important;
+}
+
+.is_link:active,
+.is_link:focus {
+  outline: none;
+}
+
+.is_link:focus-visible {
+  outline: auto;
+}

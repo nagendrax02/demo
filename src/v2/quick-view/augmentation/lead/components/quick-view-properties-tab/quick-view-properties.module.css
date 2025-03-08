@@ -1,0 +1,13 @@
+.tab_content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ng-gp-12);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.properties {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,115 @@
+.nav_panel {
+  display: flex;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  left: -150%;
+  top: 0;
+  color: rgb(var(--marvin-quaternary-text));
+  transition: left 0.5s ease-out;
+  flex-direction: column;
+  background: rgb(var(--marvin-base)) 0% 0% no-repeat padding-box;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 8%);
+  z-index: 1049;
+}
+
+.show_nav_panel {
+  left: 0;
+}
+
+.nav_panel_header {
+  box-sizing: border-box;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(var(--marvin-quaternary-text));
+  padding-inline: 17px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 0 rgb(0 0 0 / 8%);
+}
+
+.nav_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overscroll-behavior: contain;
+  overflow-y: scroll;
+}
+
+.nav_item_icon {
+  margin-inline-end: 24px;
+}
+
+.nav_item_container {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+}
+
+.nav_item {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  text-align: start;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgb(var(--marvin-tertiary-text));
+  text-decoration: none;
+  padding-inline: 26px 24px;
+}
+
+.nav_item_display_name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+
+.active_nav_item {
+  color: rgb(var(--marvin-primary-text)) !important;
+  font-weight: 500 !important;
+}
+
+.nav_sub_items_wrapper {
+  background: rgb(var(--marvin-background-2));
+  box-shadow: 0 1px 0 rgb(0 0 0/8%);
+  padding: 16px 17px;
+}
+
+.nav_sub_item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 14px;
+  color: rgb(var(--marvin-secondary-text));
+  border-radius: 2px;
+  gap: 12px;
+
+  [class*='icon-wrapper'] {
+    width: 24px;
+  }
+}
+
+.nav_sub_item_active {
+  box-shadow: 0 1px 0 rgb(var(--marvin-divider-1));
+  background: rgb(var(--marvin-base)) !important;
+  color: rgb(var(--marvin-primary-text)) !important;
+}
+
+.accordion_custom_style {
+  [class*='accordion-header'] {
+    padding: 0;
+    width: 100%;
+
+    & > div {
+      align-items: center;
+      justify-content: space-between;
+      padding-inline-end: 24px;
+    }
+  }
+}

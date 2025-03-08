@@ -1,0 +1,9 @@
+.tabs {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+  width: 100%;
+  background: rgb(var(--marvin-base));
+  height: 48px;
+  box-sizing: border-box;
+}

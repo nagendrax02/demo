@@ -1,0 +1,23 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  max-height: 0;
+  overflow-y: auto;
+  transition: max-height 0.3s ease-out;
+  z-index: var(--full-screen-z-index);
+}
+
+.animate {
+  max-height: 100%;
+  transition: max-height 0.3s ease-out;
+}
+
+.delete_header_style {
+  top: 0 !important;
+}
+
+.delete_body_style {
+  height: 100% !important;
+}

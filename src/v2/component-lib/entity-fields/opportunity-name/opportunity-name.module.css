@@ -1,0 +1,13 @@
+.icon {
+  font-size: 14px;
+  max-width: 14px;
+  max-height: 14px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 4px;
+  color: rgb(var(--marvin-primary));
+}

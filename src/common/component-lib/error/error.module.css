@@ -1,0 +1,37 @@
+.title {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: rgb(var(--marvin-secondary-text));
+  text-align: center;
+  font-weight: var(--marvin-fw-semibold);
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.icon {
+  text-align: center;
+  height: 80px;
+
+  /* --marvin-quaternary-text */
+  filter: invert(68%) sepia(4%) saturate(974%) hue-rotate(169deg) brightness(91%) contrast(91%);
+}
+
+.icon_styles {
+  color: rgb(var(--marvin-quaternary-text));
+  font-size: 80px;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 16px;
+  color: rgb(var(--marvin-tertiary-text));
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

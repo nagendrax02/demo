@@ -1,0 +1,20 @@
+.task_option_container {
+  display: flex;
+  align-items: center;
+  width: 0;
+  flex: 1 0 0;
+}
+
+.task_color {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  margin-inline-end: 8px;
+  border-radius: var(--ng-rd-6);
+}
+
+.label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

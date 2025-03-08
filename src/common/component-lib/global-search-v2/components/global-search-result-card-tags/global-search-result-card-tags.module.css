@@ -1,0 +1,8 @@
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--ng-gp-2) var(--ng-gp-4);
+  font-size: var(--ng-lb-2-fs);
+  border-radius: var(--ng-rd-4);
+}

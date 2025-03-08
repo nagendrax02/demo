@@ -1,0 +1,10 @@
+.link {
+  cursor: pointer;
+  color: rgb(var(--marvin-primary));
+}
+
+.name {
+  font-size: 13px;
+  line-height: 18px;
+  padding: 2px 4px;
+}

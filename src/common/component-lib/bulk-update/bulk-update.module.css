@@ -1,0 +1,21 @@
+.modal {
+  width: 500px !important;
+  max-width: 500px !important;
+  max-height: 98vh;
+
+  [class*='modal-body'] {
+    padding-bottom: 0;
+  }
+
+  [class*='dropdown-content'] {
+    z-index: 10;
+  }
+
+  [class*='input-element'] {
+    height: 32px;
+  }
+}
+
+.custom_style {
+  overflow: auto;
+}

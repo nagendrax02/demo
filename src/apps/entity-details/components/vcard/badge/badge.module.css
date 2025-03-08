@@ -1,0 +1,32 @@
+.badge {
+  /* Size and Shape */
+  height: 28px;
+  border-radius: 2px;
+  gap: 8px;
+  box-sizing: border-box;
+  padding: 4px 12px;
+  max-width: 200px;
+
+  /* Font */
+  font-size: var(--vcard-badge-font-size);
+  font-style: normal;
+  font-weight: var(--vcard-badge-font-weight);
+  line-height: var(--vcard-badge-line-height);
+
+  /* Color */
+  color: rgb(var(--marvin-base));
+  background: rgb(var(--marvin-purple-500));
+
+  /* Behavior */
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.shimmer {
+  /* Size and Shape */
+  height: 28px !important;
+  min-width: 75px !important;
+  border-radius: 2px !important;
+}

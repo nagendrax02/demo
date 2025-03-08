@@ -1,0 +1,13 @@
+.content {
+  background-color: rgb(var(--marvin-base));
+  margin: 0 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 32px;
+  grid-auto-rows: minmax(20px, auto);
+  grid-auto-flow: dense;
+  font-size: 13px;
+  padding-block: 8px 16px;
+  padding-inline: 20px;
+  border-radius: 1px 1px 0 0;
+}

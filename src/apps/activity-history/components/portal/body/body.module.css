@@ -1,0 +1,8 @@
+.anchor {
+  cursor: pointer;
+  color: rgb(var(--marvin-primary));
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  transition: color 0.3s;
+}

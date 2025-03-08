@@ -1,0 +1,120 @@
+.left_panel_wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.left_panel_container {
+  position: relative;
+  height: 100%;
+  transition:
+    width 0.4s,
+    padding 0.4s;
+  background-color: rgb(var(--marvin-background-2));
+  box-shadow: 1px 3px 2px rgba(var(--marvin-primary-text), 0.1);
+  overflow: hidden;
+  white-space: nowrap;
+
+  &.show {
+    width: 250px;
+    padding: 0;
+  }
+
+  &.hide {
+    width: 10px;
+    padding: 0;
+  }
+}
+
+.left_panel_content_wrapper {
+  max-height: 100vh;
+  padding: 16px 12px;
+  overflow-x: hidden;
+}
+
+.left_panel_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  [class*='title'] {
+    font-weight: var(--marvin-fw-bold);
+    color: rgb(var(--marvin-primary-text));
+    font-size: 13px;
+  }
+}
+
+.tabs_list {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.toggle_container {
+  position: fixed;
+  background-color: rgb(var(--marvin-base));
+  color: rgb(var(--marvin-primary));
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 32px;
+  transform: translateX(240px) rotate(180deg);
+  box-shadow: 0 -1px 1px rgba(var(--marvin-primary-text), 0.25);
+  cursor: pointer;
+  transition: transform 0.4s ease 0s;
+  z-index: 1;
+
+  & span {
+    font-size: 20px;
+  }
+}
+
+.toggle_container_close {
+  transform: unset;
+  box-shadow: 0 1px 1px rgba(var(--marvin-primary-text), 0.25);
+}
+
+.icon {
+  margin-inline-end: 10px;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+
+.nav_item_text {
+  color: rgb(var(--marvin-tertiary-text));
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.nav_item_text_active {
+  color: rgb(var(--marvin-primary-text));
+  font-weight: var(--marvin-fw-semibold);
+}
+
+.nav_item_container {
+  display: flex;
+  cursor: pointer;
+  font-weight: var(--marvin-fw-regular);
+  padding-block: 6px;
+  padding-inline: 20px 10px;
+  height: 40px;
+  background-color: rgb(var(--marvin-background-2));
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.nav_item_active {
+  background-color: rgb(var(--marvin-base));
+  border-radius: 2px;
+  box-shadow: rgba(0 0 0 / 8%) 0 1px 0;
+}
+
+.external_app_sub_menu_container {
+  display: flex;
+  height: 100%;
+}

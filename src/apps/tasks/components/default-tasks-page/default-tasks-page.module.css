@@ -1,0 +1,55 @@
+.default_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0 16px 0 0;
+}
+
+.default_page_icon {
+  font-size: 80px;
+  height: 80px;
+  width: 80px;
+
+  /* --marvin-quaternary-text */
+  filter: invert(68%) sepia(4%) saturate(974%) hue-rotate(169deg) brightness(91%) contrast(91%);
+}
+
+.default_title {
+  color: rgb(var(--marvin-secondary-text));
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 24px;
+  margin-bottom: 27px;
+}
+
+.default_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add_task_shimmer {
+  height: 20px;
+  width: 88px;
+  border-radius: 2px;
+}
+
+.icon {
+  margin-inline-start: 8px;
+  top: -1px;
+  position: relative;
+}
+
+.add_task_button {
+  & > div {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 554px;
+    display: block;
+  }
+}

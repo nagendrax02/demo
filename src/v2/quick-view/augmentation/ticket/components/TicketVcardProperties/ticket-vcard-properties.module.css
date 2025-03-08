@@ -1,0 +1,18 @@
+.ticket_properties {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket_properties_tags {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--ng-gp-4);
+}
+
+.merged_icon {
+  fill: rgb(var(--ng-purple-70));
+  width: 20px;
+  height: 20px;
+}

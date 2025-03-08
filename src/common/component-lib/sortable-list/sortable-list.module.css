@@ -1,0 +1,149 @@
+.ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--ng-gp-8);
+
+  & * {
+    box-sizing: border-box;
+  }
+}
+
+.li {
+  background: rgb(var(--ng-neutral-0));
+  color: rgb(var(--ng-secondary-text));
+  position: relative;
+  height: 34px;
+  border-radius: var(--ng-rd-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: auto !important;
+  padding: var(--ng-gp-8);
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%);
+
+  &:hover {
+    background: rgb(var(--ng-neutral-10)) !important;
+
+    [class*='sortable-list-item-action'] {
+      opacity: 1;
+    }
+  }
+}
+
+.draggable {
+  cursor: not-allowed;
+}
+
+.drag_indicator {
+  display: flex;
+  color: rgb(var(--ng-neutral-60));
+  font-size: 14px;
+}
+
+.close_button {
+  width: 14px;
+  height: 14px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.close {
+  display: flex;
+  color: rgb(var(--ng-neutral-60));
+  font-size: 14px;
+
+  &:hover {
+    color: rgb(var(--ng-neutral-70));
+  }
+}
+
+.title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.content_wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: var(--ng-gp-8);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  max-width: 60%;
+  gap: var(--ng-gp-8);
+}
+
+.action {
+  display: flex;
+}
+
+.badge_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  max-width: 60px;
+}
+
+.pin_base_button {
+  width: 18px;
+  height: 18px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.pin_base_icon {
+  width: 18px;
+  height: 18px;
+
+  &.pinned {
+    fill: rgb(var(--ng-primary-30));
+
+    &:hover {
+      fill: rgb(var(--ng-primary-40));
+    }
+  }
+
+  &.unpinned {
+    fill: rgb(var(--ng-neutral-60));
+
+    &:hover {
+      fill: rgb(var(--ng-neutral-70));
+    }
+  }
+
+  &.disabled {
+    fill: rgb(var(--ng-neutral-40));
+  }
+
+  &.max_limit_reached {
+    fill: rgb(var(--ng-disabled-text));
+  }
+}
+
+.action_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--ng-gp-8);
+  margin-inline-start: auto;
+}

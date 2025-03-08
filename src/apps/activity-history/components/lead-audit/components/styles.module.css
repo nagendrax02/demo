@@ -1,0 +1,28 @@
+.text {
+  margin-bottom: 4px;
+  color: rgb(var(--marvin-secondary-text));
+}
+
+.bold {
+  font-weight: var(--marvin-fw-semibold);
+}
+
+.merge_text {
+  margin-bottom: 4px;
+  color: rgb(var(--marvin-secondary-text));
+  display: flex;
+  flex-direction: column;
+
+  [class*='user-name'] {
+    display: inline;
+  }
+}
+
+.link {
+  cursor: pointer;
+  color: rgb(var(--marvin-primary)) !important;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

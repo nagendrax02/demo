@@ -1,0 +1,153 @@
+.wrapper {
+  padding: 16px;
+  padding-bottom: 0;
+}
+
+.header {
+  font-size: 14px;
+  font-weight: var(--marvin-fw-bold);
+  text-align: left;
+  color: rgb(var(--marvin-primary-text));
+  margin-bottom: 20px;
+}
+
+.category_container {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  font-weight: var(--marvin-fw-regular);
+  color: rgb(var(--marvin-tertiary-text));
+  font-size: 13px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(var(--marvin-base));
+  }
+
+  > svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.category_name {
+  max-width: 177px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.category_active {
+  background-color: rgb(var(--marvin-base));
+  cursor: default;
+  border-radius: 2px;
+  box-shadow: rgb(0 0 0 / 8%) 0 1px 0;
+  color: rgb(var(--marvin-primary-text));
+  font-weight: 510;
+}
+
+.file_list_container {
+  border-top: 1px solid rgb(var(--marvin-border-1));
+  padding-top: 16px;
+  margin: 0 8px 16px;
+}
+
+.file_list_header {
+  font-weight: 590;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 20px;
+  color: rgb(var(--marvin-primary-text));
+  margin-inline-start: 4px;
+  text-align: left;
+}
+
+.file_count_wrapper {
+  font-size: 11px;
+  display: flex;
+  color: rgb(var(--marvin-tertiary-text));
+  margin: 4px 0 16px 4px;
+  justify-content: flex-start;
+
+  div {
+    unicode-bidi: plaintext;
+  }
+
+  > ul {
+    padding-inline-start: 16px;
+    margin: 0;
+
+    li::marker {
+      color: rgb(var(--marvin-icon-1));
+    }
+
+    li {
+      unicode-bidi: plaintext;
+    }
+  }
+}
+
+.file_list_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: var(--marvin-fw-regular);
+  color: rgb(var(--marvin-tertiary-text));
+  margin: 0 4px;
+  font-size: 13px;
+}
+
+.file_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--marvin-fw-regular);
+  color: rgb(var(--marvin-tertiary-text));
+  font-size: 13px;
+  padding: 6px 8px;
+
+  > svg {
+    width: 16px;
+    height: 16px;
+    color: rgb(var(--marvin-quaternary-text));
+  }
+}
+
+.file_detail {
+  display: flex;
+  gap: 10px;
+}
+
+.file_name_wrapper {
+  width: 160px;
+  display: flex;
+  cursor: context-menu;
+
+  > span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.clear_icon {
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(var(--marvin-quaternary-text));
+
+  &:hover {
+    background: rgb(var(--marvin-border-1));
+    border-radius: 2px;
+  }
+}

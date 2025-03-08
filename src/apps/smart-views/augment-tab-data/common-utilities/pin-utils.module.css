@@ -1,0 +1,10 @@
+.disable_remove_icon {
+  [class*='close-icon'] {
+    color: rgb(var(--ng-neutral-40));
+    cursor: not-allowed;
+
+    &:hover {
+      color: rgb(var(--ng-neutral-40));
+    }
+  }
+}

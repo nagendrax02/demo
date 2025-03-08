@@ -1,0 +1,28 @@
+.record_counter_container {
+  position: absolute;
+  bottom: 28px;
+  margin-inline-start: 32px;
+}
+
+.record_counter_option_container {
+  position: absolute;
+  bottom: inherit;
+  margin-inline-start: 45px;
+}
+
+.record_counter_wrapper {
+  background-color: rgb(var(--marvin-red-500));
+  height: 16px;
+  padding: 0 5px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.record_counter_label {
+  padding: 0;
+  color: rgb(var(--marvin-base));
+  font-size: 11px;
+}

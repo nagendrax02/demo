@@ -1,0 +1,52 @@
+.tab {
+  white-space: nowrap;
+  border: unset;
+  border-top-left-radius: unset;
+  border-top-right-radius: unset;
+  color: rgb(var(--marvin-tertiary-text));
+  font-size: 12px;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding: 16px;
+  cursor: pointer;
+
+  &.active,
+  &:focus {
+    border-bottom: 3px solid rgb(var(--marvin-primary)) !important;
+    color: rgb(var(--marvin-primary-text));
+    padding-bottom: 28px;
+    background: none;
+  }
+
+  &:hover {
+    border: none;
+    color: rgb(var(--marvin-primary-text));
+  }
+
+  @media (width <= 768px) {
+    font-size: 13px;
+  }
+}
+
+.record_counter_container {
+  position: absolute;
+  bottom: 28px;
+  margin-inline-start: 32px;
+}
+
+.record_counter_wrapper {
+  background-color: rgb(var(--marvin-red-500));
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.record_counter_label {
+  padding: 0;
+  color: rgb(var(--marvin-base));
+  font-size: 11px;
+}

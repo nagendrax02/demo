@@ -1,0 +1,28 @@
+.sandbox {
+  padding: 50px;
+  height: 100vh;
+  overflow: auto;
+  box-sizing: border-box;
+  background-color: rgb(var(--marvin-base));
+
+  & > h1 {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.item {
+  padding: 20px;
+  border: 1px solid rgb(var(--marvin-divider-1));
+  background-color: rgb(var(--marvin-background-2));
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  & > h3 {
+    margin-top: 0;
+  }
+
+  [class*='options'] {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,51 @@
+.outer_container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.inner_container {
+  display: flex;
+  width: 540px;
+  max-width: 540px;
+  height: 540px;
+  max-height: 540px;
+  padding: var(--ng-gp-16) var(--ng-gp-16) var(--ng-gp-24) var(--ng-gp-16);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--ng-gp-8);
+  border-radius: var(--ng-rd-8);
+  background: rgba(var(--ng-neutral-10));
+  box-shadow:
+    0 0 2px 0 rgba(var(--ng-shadow-black-12)),
+    0 0 32px 0 rgba(var(--ng-shadow-black-8));
+  box-sizing: border-box;
+
+  & * {
+    box-sizing: border-box;
+  }
+
+  z-index: 9999;
+}
+
+.section {
+  height: calc(100% - 40px);
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: var(--ng-gp-4);
+}
+
+.no_results_found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: var(--ng-gp-4);
+
+  & span {
+    color: rgba(var(--ng-quaternary-text));
+  }
+}

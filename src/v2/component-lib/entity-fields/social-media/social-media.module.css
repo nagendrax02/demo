@@ -1,0 +1,22 @@
+.button {
+  cursor: pointer;
+}
+
+.icon_wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--ng-gp-4);
+}
+
+.link_text {
+  min-width: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  min-width: 20px;
+}

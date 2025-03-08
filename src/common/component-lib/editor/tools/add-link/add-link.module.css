@@ -1,0 +1,155 @@
+.container {
+  position: fixed;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  background: rgb(var(--marvin-base));
+  border-radius: 4px;
+  padding: 7px 12px;
+  width: 327px;
+  margin: auto;
+  margin-top: 4px;
+  box-shadow: 0 2px 4px rgb(var(--marvin-primary-text), 0.2) !important;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: rgb(var(--marvin-secondary-text));
+  line-height: 22px;
+}
+
+.input_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.link_wrapper {
+  width: 100%;
+
+  & > input {
+    width: 100%;
+    border: 1px solid rgb(var(--marvin-border-1));
+    border-radius: 2px;
+    max-height: 28px !important;
+  }
+
+  & > input:hover {
+    border: 1px solid rgb(var(--marvin-primary));
+  }
+}
+
+.protocol_wrapper {
+  & > div {
+    width: auto;
+  }
+
+  [class*='input-container'] {
+    width: 80px;
+    position: relative;
+    max-height: 28px !important;
+    box-sizing: border-box;
+  }
+
+  [class*='input-container']:hover {
+    border: 1px solid rgb(var(--marvin-primary));
+  }
+
+  [class*='dropdown-content'] {
+    padding: 4px 0;
+    z-index: 2;
+  }
+
+  [class*='option-wrapper'] {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  [class*='option-wrapper'] > div {
+    width: 100%;
+  }
+
+  [class*='option-label'] {
+    padding: 0;
+  }
+
+  [class*='dropdown-input'] {
+    max-width: 55px;
+    overflow: hidden;
+  }
+
+  [class*='dropdown-input'] > input {
+    display: none;
+  }
+
+  [class*='input-placeholder'] {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  [class*='input-placeholder'] > label {
+    left: 0;
+    top: 0;
+    position: relative;
+    padding: 2px 4px;
+    font-size: 13px;
+    line-height: 20.5px;
+    width: 100%;
+  }
+
+  [class*='dropdown-icon'] {
+    margin-inline-end: 3px;
+    line-height: inherit;
+  }
+}
+
+.checkbox_wrapper {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  display: flex;
+  color: rgb(var(--marvin-secondary-text));
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+
+  [class*='checkbox'] {
+    height: 16px;
+    width: 16px;
+    padding-inline-end: 8px;
+    cursor: pointer;
+  }
+
+  [class*='checkbox'] > span {
+    box-sizing: border-box;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+
+  [class*='checkbox'] > div {
+    height: 12px;
+    width: 12px;
+    margin: 2px;
+  }
+}
+
+.insert_button {
+  padding: 5px 16px;
+  line-height: 16px;
+  height: 28px;
+}

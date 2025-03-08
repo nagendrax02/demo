@@ -1,0 +1,1 @@
+export const INVALID_DATE_VALUE = '1/1/0001 12:00:00 AM';

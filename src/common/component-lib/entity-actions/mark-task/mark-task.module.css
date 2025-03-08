@@ -1,0 +1,8 @@
+.description {
+  display: flex;
+}
+
+.warning_icon {
+  margin: auto;
+  margin-inline-end: 12px;
+}

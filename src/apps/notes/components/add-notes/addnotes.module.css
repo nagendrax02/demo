@@ -1,0 +1,40 @@
+.addnotes_body {
+  display: flex !important;
+  flex-direction: column;
+  height: 276px !important;
+
+  [class*='fr-wrapper'] {
+    min-height: 126px !important;
+  }
+}
+
+.addnotes_error {
+  color: rgb(var(--marvin-danger-1));
+  margin-bottom: 8px;
+  font-size: 13px;
+  min-height: 16px;
+}
+
+.addnotes_upload {
+  label {
+    height: 32px;
+  }
+}
+
+.addnotes_upload_disable {
+  cursor: not-allowed;
+
+  label {
+    pointer-events: none;
+  }
+}
+
+.save_spinner {
+  display: flex;
+
+  [class*='spinner'] {
+    height: 16px !important;
+    width: 16px !important;
+    margin-inline-end: 8px;
+  }
+}

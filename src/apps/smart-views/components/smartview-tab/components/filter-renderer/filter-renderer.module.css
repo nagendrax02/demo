@@ -1,0 +1,35 @@
+.filter[class*='show-content'] {
+  max-height: 260px !important;
+  border: 1px solid rgb(var(--marvin-divider-1)) !important;
+  box-shadow: 0 1px 6px rgba(var(--marvin-primary-text), 0.2) !important;
+}
+
+.account_filter {
+  width: 240px !important;
+
+  [class*='ng-dd-checkbox-item-content'] {
+    align-items: start;
+  }
+}
+
+.disable_filter {
+  cursor: not-allowed;
+
+  input,
+  [class*='input-container'] {
+    pointer-events: none;
+    background-color: rgb(var(--marvin-background-1)) !important;
+  }
+}
+
+.date_filter {
+  display: flex;
+  align-items: center;
+}
+
+.badge_option {
+  display: block !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,40 @@
+.list_title {
+  margin-inline-end: 12px;
+}
+
+.list_action {
+  margin-inline-start: auto;
+  justify-content: flex-end;
+}
+
+.list_primary_section {
+  min-height: 32px !important;
+}
+
+.total_lead {
+  padding-inline-end: 68px !important;
+}
+
+.list_creation_info_container {
+  height: 100%;
+  padding-inline-start: 10px;
+}
+
+.icon_hide {
+  display: none !important;
+}
+
+.list_label {
+  color: rgb(var(--marvin-quaternary-text));
+  font-size: 13px;
+  margin: 0 4px 0 10px;
+}
+
+.list_value {
+  color: rgb(var(--marvin-primary-text));
+  font-size: 13px;
+}
+
+.first_col {
+  padding-inline-end: 68px;
+}

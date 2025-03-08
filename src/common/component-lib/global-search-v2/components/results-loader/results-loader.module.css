@@ -1,0 +1,12 @@
+.loader_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--ng-gp-8);
+  padding: var(--ng-lb-2-fs) var(--ng-lb-1-fs);
+}
+
+.loader {
+  width: 100%;
+}

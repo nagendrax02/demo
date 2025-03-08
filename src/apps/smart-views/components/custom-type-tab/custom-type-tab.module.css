@@ -1,0 +1,14 @@
+.title {
+  margin-inline-end: var(--ng-gp-8);
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container {
+  svg {
+    height: 14px !important;
+    width: 14px !important;
+  }
+}

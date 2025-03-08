@@ -1,0 +1,23 @@
+.inner_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40px;
+  max-height: 40px;
+  width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  gap: var(--ng-gp-8);
+}
+
+.outer_container {
+  display: flex;
+  align-items: center;
+  padding: var(--ng-gp-16) var(--ng-gp-16) var(--ng-gp-12) var(--ng-gp-16);
+  background: rgb(var(--ng-neutral-20));
+  box-sizing: border-box;
+}
+
+.outer_container * {
+  box-sizing: border-box;
+}

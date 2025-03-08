@@ -1,0 +1,68 @@
+.grid_container {
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondary_header {
+  display: flex;
+  padding-top: 16px;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-grow: 1;
+  gap: 12px;
+}
+
+.smartview_tab {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: rgb(var(--marvin-base));
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+
+  [class*='text-align-right'] {
+    text-align: right;
+  }
+}
+
+.smartviews_grid {
+  overflow: auto !important;
+  max-height: 71vh;
+}
+
+.corner_action {
+  height: 16px;
+  width: 16px;
+  margin-inline-start: 3px;
+  fill: rgb(var(--ng-icon-black));
+}
+
+.empty_records_action_wrapper {
+  justify-content: flex-start !important;
+}
+
+.header_shimmer_wrapper {
+  margin-bottom: var(--ng-gp-12);
+
+  .actions_shimmer_wrapper {
+    margin-bottom: var(--ng-gp-12);
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.layout_grid_container_shimmer {
+  display: flex;
+  flex-direction: column;
+  padding: var(--ng-gp-16) var(--ng-gp-20);
+  background-color: rgb(var(--ng-neutral-white));
+  border-radius: var(--ng-rd-12);
+  box-sizing: border-box;
+  width: 100%;
+  overflow-y: hidden !important;
+}

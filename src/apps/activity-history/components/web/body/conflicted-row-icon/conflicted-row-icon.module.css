@@ -1,0 +1,9 @@
+.icon {
+  color: rgb(var(--marvin-warning-1)) !important;
+  cursor: pointer;
+}
+
+.wrapper {
+  height: 20px;
+  width: 20px;
+}

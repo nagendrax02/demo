@@ -1,0 +1,124 @@
+.container {
+  width: 950px !important;
+
+  [class*='title-wrapper'] {
+    width: fit-content;
+  }
+}
+
+.content {
+  height: 300px;
+}
+
+.custom_icon_style {
+  font-size: 16px !important;
+  margin-inline-end: 3px !important;
+}
+
+.action_container {
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 1px;
+  color: rgb(var(--marvin-tertiary-text));
+  cursor: pointer;
+}
+
+.custom_body {
+  display: block !important;
+  margin-bottom: var(--ng-gp-64);
+
+  [class*='cell-container'] {
+    padding: 6px 8px;
+
+    [class*='cell-tooltip'] {
+      width: 100%;
+    }
+  }
+
+  [class*='cell-content'] {
+    text-align: start;
+  }
+
+  [class*='table-data'] {
+    display: block;
+    width: 100% !important;
+    text-wrap: nowrap;
+    max-width: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.custom_body > div {
+  max-height: 318px !important;
+
+  [class*='table-header'] {
+    position: relative !important;
+  }
+}
+
+.cancel_modal_container {
+  width: 400px !important;
+  height: 160px !important;
+}
+
+.cancel_modal {
+  [class*='modal-body'] {
+    padding: 0 var(--ng-gp-16) !important;
+  }
+}
+
+.secondary_button {
+  background: rgb(var(--marvin-base));
+  color: rgb(var(--marvin-danger-1)) !important;
+  border: 1px solid rgb(var(--marvin-border-1));
+  font-size: 13px;
+  line-height: 20px;
+  padding: 5px 16px;
+}
+
+.description {
+  color: rgb(var(--marvin-tertiary-text));
+  font-size: 13px;
+  line-height: 20px;
+  padding-bottom: 8px;
+}
+
+.icon_style {
+  font-size: 65px;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgba(var(--marvin-quaternary-text));
+}
+
+.no_mail_text {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-top: 36px;
+  margin-bottom: 121px;
+  color: rgb(var(--marvin-secondary-text));
+  font-weight: var(--marvin-fw-semibold);
+}
+
+.icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.grid_container {
+  tbody {
+    border-left: 1px solid rgb(var(--ng-neutral-30));
+    border-right: 1px solid rgb(var(--ng-neutral-30));
+  }
+
+  [class*='cell-container'] {
+    border-right: unset;
+  }
+}

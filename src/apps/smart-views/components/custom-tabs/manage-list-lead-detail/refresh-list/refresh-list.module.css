@@ -1,0 +1,7 @@
+.request_history_link {
+  color: rgb(var(--marvin-primary));
+  font-weight: 600;
+  margin-inline-start: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}

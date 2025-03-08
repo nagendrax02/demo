@@ -1,0 +1,24 @@
+.popup_wrapper {
+  position: relative;
+}
+
+.popup {
+  border: 1px solid rgb(var(--marvin-divider-1));
+  box-shadow: 0 2px 4px rgb(var(--marvin-primary-text), 0.2);
+  background: rgb(var(--marvin-base)) !important;
+  border-radius: 2px;
+  margin-bottom: 4px;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  overflow: hidden;
+  z-index: inherit;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}

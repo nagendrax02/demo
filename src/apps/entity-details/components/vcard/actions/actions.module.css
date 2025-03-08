@@ -1,0 +1,135 @@
+.entity_action_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  /* TODO: update media constant */
+  @media (width <= 768px) {
+    justify-content: center;
+  }
+}
+
+.entity_button_actions {
+  & > div {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    display: block;
+  }
+
+  display: flex;
+  max-height: 32px;
+  padding: 6px 16px 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  /* TODO: update media constant */
+  @media (width <= 768px) {
+    padding: 8px !important;
+    max-height: 40px;
+  }
+}
+
+.entity_more_actions {
+  display: flex;
+  max-height: 32px;
+  padding: 6px !important;
+  justify-content: center;
+  align-items: center;
+
+  /* TODO: update media constant */
+  @media (width <= 768px) {
+    padding: 8px !important;
+    max-height: 40px;
+  }
+}
+
+.task_action_icon {
+  font-size: 18px;
+  height: 18px;
+  width: 18px;
+  fill: rgb(var(--marvin-secondary-text));
+  color: rgb(var(--marvin-secondary-text));
+
+  @media (width <= 768px) {
+    font-size: 22px;
+    height: 22px;
+    width: 22px;
+  }
+}
+
+.action_icon {
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  fill: rgb(var(--marvin-secondary-text));
+  color: rgb(var(--marvin-secondary-text));
+
+  /* TODO: update media constant */
+  @media (width <= 768px) {
+    font-size: 24px;
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.action_icon_v2 {
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.person_add {
+  transform: scaleX(-1);
+}
+
+.action_text_wrapper {
+  /* TODO: update media constant */
+  @media (width <= 768px) {
+    [class*='button_text'] {
+      display: none;
+    }
+  }
+}
+
+.shimmer_wrapper {
+  [class*='button_text'] {
+    display: flex;
+  }
+}
+
+.shimmer {
+  height: 28px !important;
+  width: 200px !important;
+  border-radius: 2px !important;
+
+  /* TODO: update media constant */
+  @media (width <= 768px) {
+    width: 40px !important;
+  }
+}
+
+.button_text_shimmer {
+  height: 20px !important;
+  width: 88px !important;
+  border-radius: 2px !important;
+
+  /* TODO: update media constant */
+  @media (width <= 768px) {
+    height: 24px !important;
+    width: 24px !important;
+  }
+}
+
+.more_action_shimmer {
+  height: 28px !important;
+  width: 28px !important;
+  border-radius: 2px !important;
+
+  /* TODO: update media constant */
+  @media (width <= 768px) {
+    width: 40px !important;
+  }
+}

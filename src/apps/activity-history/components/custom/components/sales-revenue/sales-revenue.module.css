@@ -1,0 +1,18 @@
+.sales_revenue {
+  color: rgb(var(--marvin-base)) !important;
+  background: rgb(var(--marvin-purple-500));
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 13px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+  min-width: fit-content;
+}
+
+.cancelled {
+  color: rgb(var(--marvin-danger-1)) !important;
+  border: 1px solid rgb(var(--marvin-danger-1));
+  background: rgb(var(--marvin-base)) !important;
+}

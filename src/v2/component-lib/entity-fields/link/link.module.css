@@ -1,0 +1,26 @@
+.ellipsis_text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.styled_link {
+  display: block;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+  color: rgb(var(--ng-neutral-70));
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(var(--ng-neutral-80));
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: rgb(var(--ng-ink-blue-50));
+  }
+
+  &:focus-visible {
+    outline: auto;
+  }
+}

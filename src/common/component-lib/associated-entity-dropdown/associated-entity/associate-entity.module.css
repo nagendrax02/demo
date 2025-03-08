@@ -1,0 +1,26 @@
+.wrapper {
+  [class*='dropdown_container'] {
+    z-index: 1;
+    width: 100%;
+
+    [class*='option-label'] {
+      width: 94%;
+      display: block;
+      position: relative;
+      padding: 4px 12px;
+
+      [class*='dropdown-option-check-icon'] {
+        position: absolute;
+        right: 10px;
+        top: 4px;
+      }
+    }
+
+    [class*='input-placeholder'] > label {
+      display: block;
+      pointer-events: all;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

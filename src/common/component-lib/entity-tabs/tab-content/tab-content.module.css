@@ -1,0 +1,11 @@
+.tab_content {
+  background-color: rgb(var(--marvin-background-2));
+}
+
+.tab_active {
+  display: block;
+}
+
+.tab_inactive {
+  display: none;
+}

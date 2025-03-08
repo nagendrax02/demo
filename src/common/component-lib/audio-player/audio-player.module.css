@@ -1,0 +1,118 @@
+.audio_player_container {
+  display: flex;
+  align-items: center;
+  background: rgb(var(--marvin-background-1));
+  border: 1px solid rgba(var(--marvin-divider-1));
+  border-radius: 50px;
+  height: 26px;
+  width: 336px;
+  margin-bottom: 8px;
+  & button {
+    background: none;
+    border: none;
+  }
+
+  @media (width <= 768px) {
+    height: 36px;
+  }
+  @supports (-moz-appearance: none) {
+    width: 360px;
+  }
+}
+
+.audio_player_container [class*='spinner'] {
+  width: 18px;
+  height: 18px;
+  padding: 4px;
+
+  @media (width <= 768px) {
+    height: 22px !important;
+    width: 22px !important;
+  }
+}
+
+[class*='download-audio-file']:focus-visible {
+  outline: 2px solid rgb(var(--marvin-primary));
+}
+
+[class*='seek-bar-active'] {
+  input[type='range']::-webkit-slider-thumb,
+  input[type='range']::-moz-range-thumb {
+    background: rgb(var(--marvin-secondary-text));
+  }
+}
+
+.audio_player_container [class*='loading'] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+[class*='download-enabled'] {
+  margin-inline-end: 0 !important;
+}
+
+.audio_controls {
+  margin-inline-end: 4px;
+
+  &:hover {
+    [class*='audio-control-icon-container'] {
+      background: rgb(var(--marvin-secondary-text)) !important;
+    }
+
+    ~ [class*='audio-seek-control'] {
+      input[type='range']::-webkit-slider-thumb,
+      input[type='range']::-moz-range-thumb {
+        width: 8px;
+        height: 8px;
+        background: rgb(var(--marvin-secondary-text)) !important;
+      }
+    }
+  }
+}
+
+.audio_control_icon_container {
+  background: rgb(var(--marvin-tertiary-text));
+  border-radius: 50%;
+  height: 18px !important;
+  width: 18px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+
+  @media (width <= 768px) {
+    height: 22px !important;
+    width: 22px !important;
+  }
+}
+
+.audio_controls_icon {
+  color: rgb(var(--marvin-base)) !important;
+  cursor: pointer;
+  font-size: 14px !important;
+
+  @media (width <= 768px) {
+    font-size: 16px !important;
+  }
+}
+.invalid_audio_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 336px;
+  margin-left: 8px;
+  @supports (-moz-appearance: none) {
+    width: 360px;
+  }
+}
+
+.retry_icon {
+  margin-inline-end: 4px;
+  margin-inline-start: 4px;
+  cursor: pointer;
+  color: rgb(var(--marvin-tertiary-text)) !important;
+  opacity: 1;
+}
+.invalid_audio {
+  opacity: 0.5;
+}

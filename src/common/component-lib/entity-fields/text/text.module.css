@@ -1,0 +1,7 @@
+.content {
+  display: -webkit-box;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+}

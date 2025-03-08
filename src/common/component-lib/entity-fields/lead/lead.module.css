@@ -1,0 +1,28 @@
+.link {
+  color: rgb(var(--marvin-primary)) !important;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    outline: auto;
+  }
+
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 14px;
+  max-width: 14px;
+  max-height: 14px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 4px;
+  color: rgb(var(--marvin-primary));
+}

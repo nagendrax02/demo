@@ -1,0 +1,9 @@
+.task_delete_button {
+  color: rgb(var(--marvin-danger-1));
+}
+
+.custom_body {
+  [class*='confirmation-body'] {
+    padding: 0 16px !important;
+  }
+}

@@ -1,0 +1,169 @@
+.checkout_container {
+  padding: 10px;
+  font-size: 13px;
+  color: rgb(var(--marvin-primary-text));
+  flex: 1;
+  border-bottom: 1px solid rgb(var(--marvin-border-1));
+
+  .label {
+    color: rgb(var(--marvin-quaternary-text));
+  }
+
+  .checkout_btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+.status_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 13px;
+  color: rgb(var(--marvin-primary-text));
+  flex: 1;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgb(var(--marvin-border-1));
+}
+
+.sub_menu {
+  border-bottom: none;
+  text-align: start;
+  padding-inline-start: 15px;
+
+  .label {
+    display: none;
+  }
+}
+
+.selected {
+  background-color: rgb(var(--marvin-primary), 0.1);
+  padding: 7px;
+  padding-inline-start: 15px;
+}
+
+.phone_numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.check_icon {
+  font-size: 20px;
+  margin-inline-start: auto;
+  color: rgb(var(--marvin-primary));
+}
+
+.submenu_icon {
+  line-height: 16px;
+}
+
+.status_color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-inline-end: 10px;
+}
+
+.checkin_modal {
+  width: 450px !important;
+
+  .checkin_modal_header {
+    border-bottom: 0;
+    padding: 0 16px;
+    padding-top: 10px;
+    min-height: 40px;
+    height: 30px;
+  }
+
+  .modal_body {
+    text-align: center;
+    padding-top: 0;
+
+    .profile_icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      font-size: 20px;
+      line-height: 20px;
+      margin: 0 auto;
+      font-weight: var(--marvin-fw-regular);
+      text-align: center;
+      color: rgb(var(--marvin-base));
+      background-color: rgb(var(--marvin-warning-1));
+      background-image: radial-gradient(
+        circle at 90% 65%,
+        rgba(var(--marvin-primary-text), 0.1) 35%,
+        transparent 40%
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile_name {
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: var(--marvin-fw-bold);
+      word-break: break-word;
+      margin: 5px 0 10px;
+    }
+
+    .description {
+      color: rgb(var(--marvin-tertiary-text));
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+
+  .modal_footer {
+    border-top: 0;
+    padding-top: 10px;
+
+    .checkin_btn {
+      width: 100%;
+      margin: 10px 20px;
+      padding: 8px 16px;
+      font-size: 16px;
+    }
+  }
+}
+
+.checkout_modal {
+  width: 400px !important;
+
+  .modal_header {
+    border-bottom: 0;
+
+    [class*='modal-title'] {
+      color: rgb(var(--marvin-secondary-text));
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .modal_body {
+    color: rgb(var(--marvin-tertiary-text));
+    font-size: 13px;
+    line-height: 20px;
+    padding-inline: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .modal_footer {
+    border-top: 0;
+    padding-top: 10px;
+
+    .signout_btn {
+      color: rgb(var(--marvin-danger-1));
+    }
+  }
+}
+
+.check_out_button_custom_style {
+  [class*='button_text'] {
+    max-width: 25ch !important;
+  }
+}

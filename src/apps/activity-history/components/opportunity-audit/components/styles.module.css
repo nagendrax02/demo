@@ -1,0 +1,56 @@
+.text {
+  margin-bottom: 4px;
+  color: rgb(var(--marvin-secondary-text));
+}
+
+.bold {
+  display: inline;
+  font-weight: 500;
+}
+
+.source_text {
+  color: rgb(var(--marvin-primary));
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.status_wrapper {
+  display: flex;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+.key_wrapper {
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 40%;
+  color: rgb(var(--marvin-secondary-text));
+  font-weight: 500;
+  margin-inline-end: 8px;
+}
+
+.value_wrapper {
+  width: 60%;
+  color: rgb(var(--marvin-secondary-text));
+}
+
+.opp_icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgb(var(--marvin-purple-500));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > svg {
+    width: 18px;
+    height: 18px;
+    font-size: 18px !important;
+    fill: rgb(var(--marvin-base)) !important;
+    stroke: rgb(var(--marvin-base)) !important;
+    stroke-width: 0.2;
+  }
+}

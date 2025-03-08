@@ -1,0 +1,1 @@
+export const OTHER_VALUE_KEY = 'MX_OTHER_VALUE';

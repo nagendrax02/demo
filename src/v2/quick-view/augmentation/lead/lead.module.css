@@ -1,0 +1,20 @@
+.avatar_text {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: var(--ng-rd-8);
+  color: rgba(var(--ng-primary-30));
+  background-color: rgba(var(--ng-primary-0));
+  box-shadow: var(--ng-gp-0) var(--ng-gp-1) var(--ng-gp-4) var(--ng-gp-0)
+    rgb(var(--ng-shadow-black-3));
+}
+
+.properties {
+  width: 100%;
+}
+
+.disabled {
+  color: rgb(var(--ng-neutral-50));
+}

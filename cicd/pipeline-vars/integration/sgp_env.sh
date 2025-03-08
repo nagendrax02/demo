@@ -1,0 +1,12 @@
+export LSQ_AWSRegion=ap-south-1  
+export LSQ_S3_Deploy_Bucket=lsq-swlite-app-develop/
+export LSQ_CDN_Id=E257KNK4S2A978
+export LSQ_Version="1.$(date +%Y%m%d.%H%M%S)"
+export LSQ_BuildARN=arn:aws:iam::309422450306:role/lsq-marvin-bitbucket-pipeline-role
+export LSQ_Region=sgp
+export LSQ_S3_Lighthouse_Deploy_Bucket=lsq-swlite-app-develop/sandbox/
+export LSQ_S3_Lighthouse_CDN_Id=E1CTPQIPX0LDW9
+export LSQ_Lighthouse_Domain=https://swlite-sandbox.marvin.crm4b2c.com/
+export LSQ_Domain=https://app.crm4b2c.com/
+export LSQ_S3_SourceMap_Bucket=lsq-marvin-app-homeapp-stage-sgp
+export LSQ_SourceMap_Domain=sourcemap.marvin.crm4b2c.com

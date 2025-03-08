@@ -1,0 +1,51 @@
+.checkbox_comment_text_area {
+  margin-top: 8px;
+}
+
+.checkbox_comment {
+  font-size: 13px;
+  color: rgb(var(--marvin-tertiary-text));
+}
+
+.checkbox_comment_field_display_name {
+  font-weight: var(--marvin-fw-semibold);
+}
+
+.editor_wrapper {
+  max-width: 466px;
+
+  [class*='fr-element'] {
+    display: block;
+    max-height: calc(100vh - 600px);
+  }
+}
+
+.text_box_wrapper {
+  border: 1px solid rgb(var(--marvin-border-1));
+}
+
+.text_box_wrapper:hover {
+  border: 1px solid rgb(var(--marvin-primary));
+}
+
+.text_area_wrapper {
+  [class*='text-area'] {
+    max-height: calc(100vh - 500px) !important;
+  }
+}
+
+.owner_dd_wrapper {
+  [class*='dropdown_container'] {
+    width: 100%;
+  }
+}
+
+.radio {
+  display: flex;
+  column-gap: 24px;
+  margin-top: 8px;
+}
+
+.text_box {
+  border: 1px solid rgb(var(--marvin-border-1));
+}

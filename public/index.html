@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- THIS SCRIPT SHOULD LOAD FIRST -->
+    <script>
+      consoleError = console?.error;
+      try {
+        window['app-initial-load'] = performance?.now();
+        window['app-visibility-changed'] = document?.visibilityState === 'hidden';
+        const logNewRelicError = (arguments) => {
+          try {
+            const getError = (arguments) => {
+              let error = arguments;
+
+              Object?.values(arguments)?.some((value) => {
+                if (value instanceof Error) {
+                  error = value;
+                  return true;
+                }
+              });
+
+              return error;
+            };
+            if (window?.newrelic && typeof window?.newrelic === 'object') {
+              const error = getError(arguments);
+              newrelic?.noticeError(error, { source: error.source });
+            }
+          } catch (error) {
+            //Don't log console error inside modified console.error
+            console.warn('Failed to push error to NewRelic', error);
+          }
+        };
+
+        console.error = function () {
+          try {
+            logNewRelicError(arguments);
+            consoleError.apply(this, arguments);
+          } catch (error) {
+            console.warn(error, arguments);
+          }
+        };
+      } catch (error) {
+        console.error = consoleError;
+        console.error(error);
+      }
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://f1.leadsquaredcdn.com/leadsquared/app/LeadSquared/Common/img/favicon.ico?v=1"
+      rel="shortcut icon"
+      type="image/x-icon"
+      id="favicon" />
+    <title>LeadSquared</title>
+    <script src="env-config.js?v=1.0.11001"></script>
+
+    <script>
+      function handleNewRelicLoadError(event) {
+        console.error('Error while loading script', event);
+      }
+    </script>
+
+    <script src="newrelic.js" onerror="handleNewRelicLoadError(event)"></script>
+    <script crossorigin="anonymous" defer src="js/lsqmarvinappintegrator.js"></script>
+
+    <!-- Remove Clarity due to performance issue -->
+    <!-- <script type="text/javascript">
+      try {
+        const getEnv = () => {
+          if (
+            window?.location?.host?.includes('crm4b2c.com') ||
+            window?.location?.host?.includes('staging.com')
+          ) {
+            return 'TEST/STAGE';
+          } else if (window?.location?.host?.includes('leadsquared.com')) {
+            return 'PROD';
+          }
+          return undefined;
+        };
+
+        let env = getEnv();
+        switch (env) {
+          case 'TEST/STAGE':
+            (function (c, l, a, r, i, t, y) {
+              c[a] =
+                c[a] ||
+                function () {
+                  (c[a].q = c[a].q || []).push(arguments);
+                };
+              t = l.createElement(r);
+              t.async = 1;
+              t.src = 'https://www.clarity.ms/tag/' + i;
+              y = l.getElementsByTagName(r)[0];
+              y.parentNode.insertBefore(t, y);
+            })(window, document, 'clarity', 'script', 'kyiqt2diqc');
+            break;
+          case 'PROD':
+            (function (c, l, a, r, i, t, y) {
+              c[a] =
+                c[a] ||
+                function () {
+                  (c[a].q = c[a].q || []).push(arguments);
+                };
+              t = l.createElement(r);
+              t.async = 1;
+              t.src = 'https://www.clarity.ms/tag/' + i;
+              y = l.getElementsByTagName(r)[0];
+              y.parentNode.insertBefore(t, y);
+            })(window, document, 'clarity', 'script', 'kyiva02atj');
+            break;
+          default:
+            console.error('Unsupported env for clarity', env);
+            break;
+        }
+      } catch (error) {
+        //Adding source property to track the errors in NewRelic
+        error.source = 'next-gen-app';
+        console.error(error);
+      }
+    </script> -->
+    <style>
+      @font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url(fonts/material-icons/normal/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2)
+          format('woff2');
+      }
+
+      .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+      }
+
+      @font-face {
+        font-family: 'Material Icons Outlined';
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url(fonts/material-icons/outlined/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcel5euIg.woff2)
+          format('woff2');
+      }
+
+      .material-icons-outlined {
+        font-family: 'Material Icons Outlined';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+      }
+
+      @font-face {
+        font-family: 'Material Icons Two Tone';
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url(fonts/material-icons/two-tone/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu0NjbrHg.woff2)
+          format('woff2');
+      }
+
+      .material-icons-two-tone {
+        font-family: 'Material Icons Two Tone';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+      }
+
+      @font-face {
+        font-family: 'Mulish';
+        src: url(fonts/mulish/1Ptvg83HX_SGhgqk3wotYKNnBQ.woff2) format('woff2');
+        font-style: normal;
+        font-weight: 200 1000;
+        font-display: swap;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="marvin-app-root"></div>
+
+    <!-- <<<<< DO NOT DELETE >>>>> -->
+    <!-- During runtime {mxhiddenvar} will be replaced to send data from platform to Marvin. -->
+    <div style="display: none">{{mxhiddenvar}}</div>
+  </body>
+</html>

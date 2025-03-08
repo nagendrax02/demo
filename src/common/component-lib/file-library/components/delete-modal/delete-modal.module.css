@@ -1,0 +1,17 @@
+.warning_wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.name {
+  max-width: 125px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.delete_button {
+  [class*='button_text'] {
+    color: rgb(var(--marvin-danger-1));
+  }
+}

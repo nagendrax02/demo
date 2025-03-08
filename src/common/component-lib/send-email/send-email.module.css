@@ -1,0 +1,44 @@
+.modal {
+  width: 850px;
+}
+
+.lead_selected_option {
+  background-color: rgb(var(--marvin-green-100)) !important;
+  color: rgb(var(--marvin-green-700)) !important;
+
+  .clear_button {
+    color: rgb(var(--marvin-quaternary-text)) !important;
+  }
+}
+
+.user_selected_option {
+  background-color: rgb(var(--marvin-purple-100)) !important;
+  color: rgb(var(--marvin-purple-700)) !important;
+
+  .clear_button {
+    color: rgb(var(--marvin-quaternary-text)) !important;
+  }
+}
+
+.lead_group,
+.lead_group > span {
+  color: rgb(var(--marvin-green-700)) !important;
+}
+
+.user_group,
+.user_group > span {
+  color: rgb(var(--marvin-purple-700)) !important;
+}
+
+.hoverable_text {
+  color: rgb(var(--marvin-blue-500));
+  cursor: 'pointer';
+  position: 'relative';
+  overflow: hidden;
+}
+
+.tooltip_content {
+  margin: 0;
+  padding: '5px 10px';
+  list-style-type: disc;
+}

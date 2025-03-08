@@ -1,0 +1,29 @@
+.button {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.link_style {
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link_style:hover {
+  text-decoration: underline;
+}
+
+.icon_wrapper {
+  display: flex;
+  gap: 8px;
+  height: 20px !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  font-weight: 600;
+  word-break: break-all;
+  color: rgb(var(--marvin-primary));
+  padding: 0;
+  line-height: 20px;
+}

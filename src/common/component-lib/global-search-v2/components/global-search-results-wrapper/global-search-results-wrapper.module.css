@@ -1,0 +1,12 @@
+.not_found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.results_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

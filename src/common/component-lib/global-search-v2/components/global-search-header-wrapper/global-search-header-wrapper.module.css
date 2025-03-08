@@ -1,0 +1,15 @@
+.search_filters_wrapper {
+  display: flex;
+  gap: var(--ng-gp-8);
+  background-color: rgb(var(--ng-neutral-white));
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: var(--ng-btn-2-fs);
+  padding: var(--ng-gp-8);
+
+  [class*='icon-wrapper'] {
+    font-size: var(--ng-h-3-fs);
+    color: rgb(var(--ng-quaternary-text));
+    cursor: pointer;
+  }
+}

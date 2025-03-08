@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.name {
+  color: rgb(var(--marvin-quaternary-text));
+  width: 100%;
+}
+
+.value {
+  width: 100%;
+}

@@ -1,0 +1,60 @@
+.default_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.default_title {
+  color: rgb(var(--marvin-secondary-text));
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 24px;
+  margin-bottom: 27px;
+}
+
+.default_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.default_page_icon {
+  font-size: 80px;
+  height: 80px;
+  width: 80px;
+
+  /* --marvin-quaternary-text */
+  filter: invert(68%) sepia(4%) saturate(974%) hue-rotate(169deg) brightness(91%) contrast(91%);
+}
+
+.delete_modal {
+  width: 400px !important;
+
+  [class*='modal-title'] {
+    color: rgb(var(--marvin-primary-text)) !important;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: var(--marvin-fw-bold);
+  }
+
+  [class*='modal-body'] {
+    font-size: 14px;
+    color: rgb(var(--marvin-secondary-text));
+  }
+
+  [class*='modal-footer'] {
+    gap: 8px;
+  }
+}
+
+.delete_btn {
+  color: rgb(var(--marvin-danger-1)) !important;
+}
+
+.notes_layout {
+  padding: 0 0 16px 16px;
+}
